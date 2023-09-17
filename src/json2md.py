@@ -64,8 +64,8 @@ def load_paper(file):
                 j+=1
                 file.write("|[{}](#paper{})".format(j,j))
                 choose(file,metric['Target Problem'])
-                file.write("|{}".format(j))
-                #choose(file,metric['Computer system stack '])
+                
+                choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
                 
                 choose(file,metric['Included carbon life cycle stage(s)'])
@@ -83,7 +83,7 @@ def load_paper(file):
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")

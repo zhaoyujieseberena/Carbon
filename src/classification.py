@@ -20,7 +20,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -35,12 +35,12 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
             file.write("### {}\n".format('Calculation'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
@@ -50,12 +50,12 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
             file.write("### {}\n".format('Standardization'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
@@ -65,7 +65,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -86,61 +86,61 @@ path = './res/papers.json'
 with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("### {}\n".format('Review'))
+            file.write("### {}\n".format('Application'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :----: | :---------: | :---: |\n")
             for paper in table:
-                if "Review" in paper["Target Problem"]:
+                if "Application" in paper["Computer system stack "]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
             file.write("\n")
-            file.write("### {}\n".format('Optimation'))
+            file.write("### {}\n".format('OS'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "Optimation" in paper["Target Problem"]:
+                if "OS" in paper["Computer system stack "]:
                     file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
             file.write("### {}\n".format('Calculation'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "Calculation" in paper["Target Problem"]:
+                if "Microarchitecture" in paper["Computer system stack "]:
                     file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
-            file.write("### {}\n".format('Standardization'))
-            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :-: | :------: | :---------: | :---: |\n")
+            file.write("\n")
+            file.write("### {}\n".format('Infrasrtucture'))
+            file.write("| Venue  | Title | Affiliation | &nbsp;Link&nbsp; | \n")
+            file.write("| :-: | :-----------: | :---------: | :---: |\n")
             for paper in table:
-                if "Standardization" in paper["Target Problem"]:
+                if "Infrasrtucture" in paper["Computer system stack "]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -169,7 +169,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -184,12 +184,12 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
             file.write("### {}\n".format('Mobile'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
@@ -199,22 +199,22 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
             file.write("### {}\n".format('TinyML'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "TinyML" in paper["Hardware system"]:
+                if "Tiny" in paper["Hardware system"]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -243,7 +243,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -258,7 +258,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
@@ -275,7 +275,7 @@ with open(path, 'r') as f:
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite =1
+                    cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
