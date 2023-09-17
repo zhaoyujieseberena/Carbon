@@ -119,35 +119,35 @@ def load_legend(file):
 def choose(file,string):
     file.write("|")
     if 'Optimation' in string:
-        file.write("[![1](images/square1.svg)]()")
+        file.write("[![1](images/square1.svg)](Classification/Target_Problem.md#Optimation)")
     if 'Application' in string:
-        file.write("[![1](images/square5.svg)]()")
+        file.write("[![1](images/square5.svg)](Classification/Computer_system_stack.md#Application)")
     if 'Datacenter' in string:
-        file.write("[![1](images/square.svg)]()")
+        file.write("[![1](images/square.svg)](Classification/Hardware_system.md#Datacenter)")
     if 'Manufacturing' in string:
-        file.write("[![1](images/square6.svg)]()")
+        file.write("[![1](images/square6.svg)](Classification/Included_carbon_life_cycle_stage(s).md#Manufacturing)")
     if 'Modeling' in string:
-        file.write("[![1](images/star1.svg)]()")
+        file.write("[![1](images/star1.svg)](Classification/Target_Problem.md#Modeling)")
     if 'OS' in string:
-        file.write("[![1](images/star5.svg)]()")
+        file.write("[![1](images/star5.svg)](Classification/Computer_system_stack.md#OS)")
     if 'Edge' in string:
-        file.write("[![1](images/star.svg)]()")
+        file.write("[![1](images/star.svg)](Classification/Hardware_system.md#Edge.md)")
     if 'Operation' in string:
-        file.write("[![1](images/star6.svg)]()")
+        file.write("[![1](images/star6.svg)](Classification/Included_carbon_life_cycle_stage(s).md#Operation)")
     if 'Standardization' in string:
-        file.write("[![1](images/stop-circle1.svg)]()")
+        file.write("[![1](images/stop-circle1.svg)](Classification/Target_Problem.md#Standardization)")
     if 'Microarchitecture' in string:
-        file.write("[![1](images/stop-circle5.svg)]()")
+        file.write("[![1](images/stop-circle5.svg)](Classification/Computer_system_stack.md#Microarchitecture)")
     if 'Mobile' in string:
-        file.write("[![1](images/stop-circle.svg)]()")
+        file.write("[![1](images/stop-circle.svg)](Classification/Hardware_system.md#Mobile)")
     if 'End-of-life' in string:
-        file.write("[![1](images/stop-circle6.svg)]()")
+        file.write("[![1](images/stop-circle6.svg)](Classification/Included_carbon_life_cycle_stage(s).md#End-of-life)")
     if 'Review' in string:
-        file.write("[![1](images/target1.svg)]()")
+        file.write("[![1](images/target1.svg)](Classification/Target_Problem.md#Review)")
     if 'Infrastructure' in string:
-        file.write("[![1](images/target5.svg)]()")
+        file.write("[![1](images/target5.svg)](Classification/Computer_system_stack.md#Infrastructure)")
     if 'Tiny' in string:
-        file.write("[![1](images/target.svg)]()")
+        file.write("[![1](images/target.svg)](Classification/Hardware_system.md#Tiny)")
     
  
 
