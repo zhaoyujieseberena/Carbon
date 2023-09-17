@@ -125,25 +125,25 @@ def choose(file,string):
     if 'Manufacturing' in string:
         file.write("[![1](images/square6.svg)]()")
     if 'Modeling' in string:
-        file.write("[![1](images/star (1).svg)]()")
+        file.write("[![1](images/star1.svg)]()")
     if 'OS' in string:
-        file.write("[![1](images/star (5).svg)]()")
+        file.write("[![1](images/star5.svg)]()")
     if 'Edge' in string:
         file.write("[![1](images/star.svg)]()")
     if 'Operation' in string:
-        file.write("[![1](images/star (6).svg)]()")
+        file.write("[![1](images/star6.svg)]()")
     if 'Standardization' in string:
-        file.write("[![1](images/stop-circle (1).svg)]()")
+        file.write("[![1](images/stop-circle1.svg)]()")
     if 'Microarchitecture' in string:
-        file.write("[![1](images/stop-circle (5).svg)]()")
+        file.write("[![1](images/stop-circle5.svg)]()")
     if 'Mobile' in string:
         file.write("[![1](images/stop-circle.svg)]()")
     if 'End-of-life' in string:
-        file.write("[![1](images/stop-circle (6).svg)]()")
+        file.write("[![1](images/stop-circle6.svg)]()")
     if 'Review' in string:
-        file.write("[![1](images/target (1).svg)]()")
+        file.write("[![1](images/target1.svg)]()")
     if 'Infrastructure' in string:
-        file.write("[![1](images/target (5).svg)]()")
+        file.write("[![1](images/target5.svg)]()")
     if 'Tiny' in string:
         file.write("[![1](images/target.svg)]()")
     
