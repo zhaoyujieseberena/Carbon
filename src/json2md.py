@@ -56,68 +56,39 @@ def load_paper(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("### {}\n".format('Review'))
-            file.write("| Venue | Year | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :---: | :---: | :----: | :---------: | :---: |\n")
+            file.write("| Paper | Computer system stack | Hardware system ｜ Target Problem | Carbon life cycle stage(s) | \n")
+            file.write("| :---: | :------: | :------: | :--------: | :--------: | \n")
+            j=0
+
+            for metric in table:
+                j+=1
+                file.write("|{}".format(j))
+                file.write("|1")
+                #choose(file,metric['Computer system stack '])
+                choose(file,metric['Hardware system'])
+                choose(file,metric['Target Problem'])
+                choose(file,metric['Included carbon life cycle stage(s)'])
+                file.write("|\n")
+
+
+            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :----: | :---------: | :---: |\n")
+            
+
             for paper in table:
-                if "Review" in paper["Target Problem"]:
-                    file.write("|{}|".format(paper['Venue']))
-                    file.write("{}|".format(paper['Year']))
+                
+                    file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
                     file.write(" [[paper]]({})".format(paper['Link']))
-                    cite = citation[paper['Title']]['citation']
+                    cite =1
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
-            file.write("### {}\n".format('Optimation'))
-            file.write("| Venue | Year | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :---: | :---: | :----: | :---------: | :---: |\n")
-            for paper in table:
-                if "Optimation" in paper["Target Problem"]:
-                    file.write("|{}|".format(paper['Venue']))
-                    file.write("{}|".format(paper['Year']))
-                    file.write("{}|".format(paper['Title']))
-                    file.write("{}|".format(paper['School/Insititution']))
-                    file.write(" [[paper]]({})".format(paper['Link']))
-                    cite = citation[paper['Title']]['citation']
-                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
-                    file.write("|")
-                    file.write("\n")
+            
 
-            file.write("|\n")
-            file.write("### {}\n".format('Calculation'))
-            file.write("| Venue | Year | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :---: | :---: | :----: | :---------: | :---: |\n")
-            for paper in table:
-                if "Calculation" in paper["Target Problem"]:
-                    file.write("|{}|".format(paper['Venue']))
-                    file.write("{}|".format(paper['Year']))
-                    file.write("{}|".format(paper['Title']))
-                    file.write("{}|".format(paper['School/Insititution']))
-                    file.write(" [[paper]]({})".format(paper['Link']))
-                    cite = citation[paper['Title']]['citation']
-                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
-                    file.write("|")
-                    file.write("\n")
-
-            file.write("|\n")
-            file.write("### {}\n".format('Standardization'))
-            file.write("| Venue | Year | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :---: | :---: | :----: | :---------: | :---: |\n")
-            for paper in table:
-                if "Standardization" in paper["Target Problem"]:
-                    file.write("|{}|".format(paper['Venue']))
-                    file.write("{}|".format(paper['Year']))
-                    file.write("{}|".format(paper['Title']))
-                    file.write("{}|".format(paper['School/Insititution']))
-                    file.write(" [[paper]]({})".format(paper['Link']))
-                    cite = citation[paper['Title']]['citation']
-                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
-                    file.write("|")
-                    file.write("\n")
+        
 
             '''
                 file.write("- [**{}**]".format(paper['venue']))
@@ -136,8 +107,92 @@ def load_paper(file):
 
                 file.write("\n")
                 '''
+def load_legend(file):
+    
+    with open("./res/legend.md", 'r') as f:
+        for line in f:
+            file.write(line)
+    
+
+def choose(file,string):
+    file.write("|")
+    if 'Optimation' in string:
+        file.write("[![1](images/square (1).svg)]()")
+    if 'Application' in string:
+        file.write("[![1](images/square (5).svg)]()")
+    if 'Datacenter' in string:
+        file.write("[![1](images/square.svg)]()")
+    if 'Manufacturing' in string:
+        file.write("[![1](images/square (6).svg)]()")
+    if 'Modeling' in string:
+        file.write("[![1](images/star (1).svg)]()")
+    if 'OS' in string:
+        file.write("[![1](images/star (5).svg)]()")
+    if 'Edge' in string:
+        file.write("[![1](images/star.svg)]()")
+    if 'Operation' in string:
+        file.write("[![1](images/star (6).svg)]()")
+    if 'Standardization' in string:
+        file.write("[![1](images/stop-circle (1).svg)]()")
+    if 'Microarchitecture' in string:
+        file.write("[![1](images/stop-circle (5).svg)]()")
+    if 'Mobile' in string:
+        file.write("[![1](images/stop-circle.svg)]()")
+    if 'End-of-life' in string:
+        file.write("[![1](images/stop-circle (6).svg)]()")
+    if 'Review' in string:
+        file.write("[![1](images/target (1).svg)]()")
+    if 'Infrastructure' in string:
+        file.write("[![1](images/target (5).svg)]()")
+    if 'Tiny' in string:
+        file.write("[![1](images/target.svg)]()")
+    
+ 
+
+def load_metrics(file):
+
+    file.write("## Metrics\n")
+
+    
+
+    path = './res/metrics.json'
+    
+    with open(path, 'r') as f:
+            table = json.load(f)
+            
+            
+            file.write("| Metric | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| :---: | :------: | :------: | :--------: | \n")
+            for metric in table:
+                file.write("|{}".format(metric['Metric']))
+                choose(file,metric['Computer_stack'])
+                choose(file,metric['Hardware system'])
+                choose(file,metric['Included carbon life cycle stage(s)'])
+                file.write("|\n")
+
+            file.write("\n")
+            file.write("| Metric | Description | Link |  \n")
+            file.write("| :---: | :--------: | :----: | \n")
+
+            for metric in table:
+                
+                    file.write("|{}|".format(metric['Metric']))
+                    file.write("{}|".format(metric['Description']))
+                    
+                    file.write(" [[Paper]]({})".format(metric['Link']))
+                    file.write("|")
+                    file.write("\n")
+                    
+           
+
+
+    
+    
+
+
 def load_others(file):
-    with open("./res/Metrics&Links.md", 'r') as f:
+    file.write("\n")
+    with open("./res/Links.md", 'r') as f:
         for line in f:
             file.write(line)
 
@@ -147,10 +202,12 @@ def load_contribute(file):
             file.write(line)
 
 
-file = open("./README.md", 'w')
+file = open("./test.md", 'w')
 
 load_head(file)
 load_content(file)
+load_legend(file)
+load_metrics(file)
 #load_lib(file)
 load_others(file)
 load_paper(file)

@@ -1,0 +1,10 @@
+Metric,Included carbon life cycle stage(s),Hardware system,Computer_stack,Description,Link,Papertitle
+PUE,Operation,Datacenter,Infrastructure,Power Usage Effectiveness of a dedicated data center,https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric,PUE™: A Comprehensive Examination of the Metric.
+GPUE,Operation,Datacenter,Infrastructure,Green Power Usage Effectivenes,https://ieeexplore.ieee.org/document/8701895,PUE or GPUE: A carbon-aware metric for data centers.
+CUE,Operation,Datacenter,Infrastructure,Carbon Usage Effectiveness,https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf,Carbon Usage Effectiveness (WUE): A Green Grid Data Center Sustainability Metric.
+CCI,Operation,Datacenter,Infrastructure,Computational Carbon Intensity,https://arxiv.org/abs/2110.06870,Junkyard computing: repurposing discarded smartphones to minimize carbon
+SCI,"Operation, Manufacturing","Datacenter, Mobile, Edge",Application,Software Carbon Intensity,https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md,"Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021)."
+CDP/CEP,"Operation, Manufacturing","Datacenter, Mobile, Edge",Microarchitecture,Product of Carbon Delay/Energy ,https://ieeexplore.ieee.org/document/10122998,ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool
+tCDP/tCEP,"Operation, Manufacturing","Datacenter, Mobile, Edge",Microarchitecture,Product of total CO2 and total application execution time,https://arxiv.org/abs/2305.01831,Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems
+JSC,"Operation, Manufacturing","Datacenter, Mobile, Edge",Application,Job Sustainability Costs,https://par.nsf.gov/servlets/purl/10353075,Metrics for Sustainability in Data Centers
+ASC,"Operation, Manufacturing","Datacenter, Mobile, Edge",Application,Amortized Sustainability Costs,https://par.nsf.gov/servlets/purl/10353075,Metrics for Sustainability in Data Centers
