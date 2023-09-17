@@ -56,27 +56,29 @@ def load_paper(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("| Paper | Computer system stack | Hardware system ｜ Target Problem | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :------: | :------: | :--------: | :--------: | \n")
+            file.write("| Metric | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| :---: | :----: | :------: | :------: | :--------: | \n")
             j=0
 
             for metric in table:
                 j+=1
+                file.write("|[{}](#paper{})".format(j,j))
+                choose(file,metric['Target Problem'])
                 file.write("|{}".format(j))
-                file.write("|1")
                 #choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
-                choose(file,metric['Target Problem'])
+                
                 choose(file,metric['Included carbon life cycle stage(s)'])
                 file.write("|\n")
-
+            file.write("\n")
 
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :----: | :---------: | :---: |\n")
             
-
+            j=0
             for paper in table:
-                
+                    j+=1
+                    file.write("<a name='paper{}'></a>".format(j))
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
@@ -86,7 +88,7 @@ def load_paper(file):
                     file.write("|")
                     file.write("\n")
 
-            
+            file.write("|\n")
 
         
 
