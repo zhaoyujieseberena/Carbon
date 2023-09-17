@@ -117,13 +117,13 @@ def load_legend(file):
 def choose(file,string):
     file.write("|")
     if 'Optimation' in string:
-        file.write("[![1](images/square (1).svg)]()")
+        file.write("[![1](images/square1.svg)]()")
     if 'Application' in string:
-        file.write("[![1](images/square (5).svg)]()")
+        file.write("[![1](images/square5.svg)]()")
     if 'Datacenter' in string:
         file.write("[![1](images/square.svg)]()")
     if 'Manufacturing' in string:
-        file.write("[![1](images/square (6).svg)]()")
+        file.write("[![1](images/square6.svg)]()")
     if 'Modeling' in string:
         file.write("[![1](images/star (1).svg)]()")
     if 'OS' in string:
