@@ -72,13 +72,13 @@ def load_paper(file):
                 file.write("|\n")
             file.write("\n")
 
-            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
-            file.write("| :-: | :----: | :---------: | :---: |\n")
+            file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :-: | :----: | :---------: | :---: |\n")
             
             j=0
             for paper in table:
                     j+=1
-                    file.write("<a name='paper{}'></a>".format(j))
+                    file.write("{}<a name='paper{}'></a>".format(j,j))
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
