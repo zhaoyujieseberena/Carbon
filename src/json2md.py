@@ -309,7 +309,7 @@ def load_contribute(file):
             file.write(line)
 
 
-file = open("./test.md", 'w')
+file = open("./Readme.md", 'w')
 
 load_head(file)
 
