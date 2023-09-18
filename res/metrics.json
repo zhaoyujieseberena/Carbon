@@ -27,7 +27,7 @@
         "Description": "Carbon Usage Effectiveness (CUE)",
         "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
         "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
-        "Equation": "$1+\\frac{ Non IT Facility Carbon}{IT Equipment Carbon }$"
+        "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$"
     },
     {
         "Metric": "CCI",
@@ -37,7 +37,7 @@
         "Description": "Computational Carbon Intensity (CCI)",
         "Link": "https://arxiv.org/abs/2110.06870",
         "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
-        "Equation": "$\\frac{Carbon}{Energy}$"
+        "Equation": "$\\frac{\\text{Carbon}}{\\text{Energy}}$"
     },
     {
         "Metric": "SCI",
