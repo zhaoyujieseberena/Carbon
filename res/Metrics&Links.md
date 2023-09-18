@@ -1,11 +1,11 @@
-| Metric    | Paper Title                                                                             | Description                                                     | Included carbon life cycle stage(s) |
-| --------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------- |
-| PUE       | PUE™: A Comprehensive Examination of the Metric.                                        | the Power Usage Effectiveness (PUE) of a dedicated data center, | Operation                           |
-| GPUE      | PUE or GPUE: A carbon-aware metric for data centers.                                    | Green Power Usage Effectiveness                                 | Operation                           |
-| CUE       | Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.       | Carbon Usage Effectiveness                                      | Operation                           |
-| CCI       | Junkyard computing: repurposing discarded smartphones to minimize carbon                | Computational Carbon Intensity                                  | Operation                           |
-| SCI       | Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).                      | Software Carbon Intensity                                       | Operation, Manufacturing            |
-| CDP/CEP   | ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool  | Carbon Delay/Energy Product                                     | Operation, Manufacturing            |
-| tCDP/tCEP | Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems | the product of total CO2𝑒 and total application execution time  | Operation, Manufacturing            |
-| JSC       | Metrics for Sustainability in Data Centers                                              | Job Sustainability Costs                                        | Operation, Manufacturing            |
-| ASC       | Metrics for Sustainability in Data Centers                                              | Amortized Sustainability Costs                                  | Operation, Manufacturing            |
+| Metric    | Paper Title                                                                             | Description                                                     | Included carbon life cycle stage |
+| --------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- | -------------------------------- |
+| PUE       | PUE™: A Comprehensive Examination of the Metric.                                        | the Power Usage Effectiveness (PUE) of a dedicated data center, | Operation                        |
+| GPUE      | PUE or GPUE: A carbon-aware metric for data centers.                                    | Green Power Usage Effectiveness                                 | Operation                        |
+| CUE       | Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.       | Carbon Usage Effectiveness                                      | Operation                        |
+| CCI       | Junkyard computing: repurposing discarded smartphones to minimize carbon                | Computational Carbon Intensity                                  | Operation                        |
+| SCI       | Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).                      | Software Carbon Intensity                                       | Operation, Manufacturing         |
+| CDP/CEP   | ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool  | Carbon Delay/Energy Product                                     | Operation, Manufacturing         |
+| tCDP/tCEP | Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems | the product of total CO2𝑒 and total application execution time  | Operation, Manufacturing         |
+| JSC       | Metrics for Sustainability in Data Centers                                              | Job Sustainability Costs                                        | Operation, Manufacturing         |
+| ASC       | Metrics for Sustainability in Data Centers                                              | Amortized Sustainability Costs                                  | Operation, Manufacturing         |

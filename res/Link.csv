@@ -1,4 +1,4 @@
-Name,Link,Description,Included carbon life cycle stage(s),Hardware system,Computer system stack ,Target Problem,Paper Link
+Name,Link,Description,Included carbon life cycle stage,Hardware system,Computer system stack ,Target Problem,Paper Link
 Codecarbon,https://github.com/mlco2/codecarbon,Track emissions from Compute and recommend ways to reduce their impact on the environment.,Operation,"Datacenter, Mobile, Edge","Microarchitecture, Circuit",Modeling,
 Carbontracker,https://github.com/lfwa/carbontracker,Track and predict the energy consumption and carbon footprint of training deep learning models.,Operation,"Datacenter, Mobile, Edge","Application, OS",Modeling,
 TinyML,https://github.com/harvard-edge/TinyML-Footprint,A tool to calculate embodied and operation carbon of TinyML in different hardware configuration.,"Operation, Manufaturing",Tiny,"Microarchitecture, Circuit","Modeling, Optimization",https://Arxiv.org/pdf/2301.11899.pdf

@@ -2,6 +2,7 @@
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 | :-: | :----: | :---------: | :---: |
 |HotCarbon <br>2023|Bringing Carbon Awareness to Multi-cloud Application Delivery|UMA| [[paper]](https://hotcarbon.org/2023/pdf/a6-maji.pdf)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|ASPLOS <br>2023|Carbon Explorer: A Holistic Framework for Designing Carbon Aware Datacenters|Meta| [[paper]](https://Arxiv.org/pdf/2201.10036.pdf)![Scholar citations](https://img.shields.io/badge/Citations-24-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |ICAIS <br>2023|Carbon Neutrality Approaches for IoT-Enabled Applications|IIIKT| [[paper]](https://ieeexplore.ieee.org/document/10073921)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon <br>2023|Carbon-Efficient Neural Architecture Search|WPI| [[paper]](https://hotcarbon.org/2023/pdf/a12-zhao.pdf)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon <br>2023|EnergAt: Fine-Grained Energy Attribution for Multi-Tenancy|ETH| [[paper]](https://Arxiv.org/abs/2307.05647)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
@@ -21,6 +22,7 @@
 |IJEEE <br>2022|Capping carbon emission from green data centers|UAuburn| [[paper]](https://link.springer.com/article/10.1007/s40095-022-00539-9)![Scholar citations](https://img.shields.io/badge/Citations-3-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |MICCAI <br>2022|Carbon Footprint of Selecting and Training Deep Learning Models for Medical Image Analysis|UCPH| [[paper]](https://Arxiv.org/pdf/2203.02202.pdf)![Scholar citations](https://img.shields.io/badge/Citations-14-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HPCA <br>2022|Chasing Carbon: The Elusive Environmental Footprint of Computing|Harvard | [[paper]](https://Arxiv.org/pdf/2011.02839.pdf)![Scholar citations](https://img.shields.io/badge/Citations-155-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Arxiv <br>2022|Eco2AI: carbon emissions tracking of machine learning models as the first step towards sustainable AI|AIRI| [[paper]](https://arxiv.org/abs/2208.00406)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon <br>2022|Metrics for Sustainability in Data Centers|SBU| [[paper]](https://hotcarbon.org/2022/pdf/hotcarbon22-gandhi.pdf)![Scholar citations](https://img.shields.io/badge/Citations-6-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |JNCA <br>2022|Recent advances in energy management for Green-IoT: An up-to-date and comprehensive survey|USorbonne| [[paper]](https://www.sciencedirect.com/science/article/pii/S1084804521002551)![Scholar citations](https://img.shields.io/badge/Citations-42-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |MLSys <br>2022|Sustainable AI: Environmental Implications, Challenges and Opportunities|Meta | [[paper]](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf)![Scholar citations](https://img.shields.io/badge/Citations-128-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
@@ -39,7 +41,6 @@
 ### Microarchitecture
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 | :-: | :------: | :---------: | :---: |
-|RSER<br>2023|Assessing embodied carbon emissions of communication user Device&Techs by combining approaches|Ericsson Research| [[paper]](https://www.sciencedirect.com/science/article/pii/S1364032123002794)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |RSER<br>2023|Assessing embodied carbon emissions of communication user Device&Techs by combining approaches|Ericsson Research| [[paper]](https://www.sciencedirect.com/science/article/pii/S1364032123002794)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |ICAIS<br>2023|Carbon Neutrality Approaches for IoT-Enabled Applications|IIIKT| [[paper]](https://ieeexplore.ieee.org/document/10073921)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |Hotcarbon<br>2023|Carbon-Aware Memory Placement|UPotsdam| [[paper]](https://dl.acm.org/doi/abs/10.1145/3604930.3605714)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
@@ -61,6 +62,7 @@
 |MLSys<br>2022|Sustainable AI: Environmental Implications, Challenges and Opportunities|Meta | [[paper]](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf)![Scholar citations](https://img.shields.io/badge/Citations-128-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon<br>2022|The Dirty Secret of SSDs: Embodied Carbon|UWM| [[paper]](https://Arxiv.org/abs/2207.10793)![Scholar citations](https://img.shields.io/badge/Citations-9-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |JCP<br>2021|Assessing the embodied carbon footprint of IoT edge Device&Techs with a bottom-up life-cycle approach|UCLouvain| [[paper]](https://Arxiv.org/abs/2105.02082)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|SCIS<br>2019|GreenChip: A tool for evaluating holistic sustainability of modern computing systems|Upitt| [[paper]](https://www.sciencedirect.com/science/article/pii/S2210537917300823)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Circuit
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 

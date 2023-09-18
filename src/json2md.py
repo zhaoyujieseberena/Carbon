@@ -41,8 +41,8 @@ def load_report(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("| Description | Link | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :----: | :------: | :------: | :--------: | \n")
+            file.write("| Description | Link | Carbon life cycle stage | Computer system stack | Hardware system |  \n")
+            file.write("| :--- | :---- | :------| :------ | :-------- | \n")
             j=0
 
             for metric in table:
@@ -54,7 +54,7 @@ def load_report(file):
                 choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
                 
-                choose(file,metric['Included carbon life cycle stage(s)'])
+                choose(file,metric['Included carbon life cycle stage'])
                 file.write("|\n")
             file.write("\n")
 
@@ -91,8 +91,8 @@ def load_Link(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :---: | :----: | :------: | :------: | :--------: | \n")
+            file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | \n")
+            file.write("| :---: | :--- | :---- | :------ | :------ | :-------- | \n")
             j=0
 
             for metric in table:
@@ -104,7 +104,7 @@ def load_Link(file):
                 choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
                 
-                choose(file,metric['Included carbon life cycle stage(s)'])
+                choose(file,metric['Included carbon life cycle stage'])
                 file.write("|\n")
             file.write("\n")
 
@@ -160,21 +160,23 @@ def load_paper(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("| Link | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :----: | :------: | :------: | :--------: | \n")
+            file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")
+            file.write("| :---: | :---- | :------ | :------ | :-------- |:-------- | \n")
             j=0
 
             for metric in table:
                 j+=1
                 file.write("|[{}](#paper{})".format(j,j))
                 choose(file,metric['Target Problem'])
-                
-                choose(file,metric['Computer system stack '])
+                choose(file,metric['Included carbon life cycle stage'])
                 choose(file,metric['Hardware system'])
+                choose(file,metric['Computer system stack '])
+                choose(file,metric['Datacenter stack'])
                 
-                choose(file,metric['Included carbon life cycle stage(s)'])
+                
+                
                 file.write("|\n")
-            file.write("\n")
+            #file.write("\n")
 
             file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :-: | :----: | :---------: | :---: |\n")
@@ -224,6 +226,18 @@ def load_legend(file):
 def choose(file,string):
     i=0
     file.write("|")
+    if 'N/A' in string:
+        i+=1
+        if i>1:
+             i=1
+             file.write("<br>")
+        file.write("N/A")
+    if 'Platform' in string:
+        i+=1
+        if i>1:
+             i=1
+             file.write("<br>")
+        file.write("[![1](image/Optimization.svg) Opt ](Classification/Datacenter_stack.md#Platform)")
     if 'Optimization' in string:
         i+=1
         if i>1:
@@ -247,7 +261,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage(s).md#Manufacturing)")
+        file.write("[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)")
     if 'Modeling' in string:
         i+=1
         if i>1:
@@ -271,7 +285,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)")
+        file.write("[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)")
     if 'Standardization' in string:
         i+=1
         if i>1:
@@ -295,7 +309,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/End-of-life.svg) E-o-l ](Classification/Included_carbon_life_cycle_stage(s).md#End-of-life)")
+        file.write("[![1](image/End-of-life.svg) E-o-l ](Classification/Included_carbon_life_cycle_stage.md#End-of-life)")
     if 'Review' in string:
         i+=1
         if i>1:
@@ -319,7 +333,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/Drive.svg) Device&Tech ](Classification/Hardware_system.md#Tiny)")
+        file.write("[![1](image/Drive.svg) D&T ](Classification/Hardware_system.md#Tiny)")
     if 'Circuit' in string:
         i+=1
         if i>1:
@@ -341,13 +355,18 @@ def load_metrics(file):
             table = json.load(f)
             
             
-            file.write("|      Metric     | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---------: | :------: | :------: | :--------: | \n")
+            file.write("|      Metric   | Link | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |  \n")
+            file.write("| :--------- | :------| :------ | :------ | :-------- | :-------- | \n")
             for metric in table:
                 file.write("|{}".format(metric['Metric']))
-                choose(file,metric['Computer_stack'])
+                file.write(" |[[Paper]]({})".format(metric['Link']))
+                choose(file,metric['Included carbon life cycle stage'])
                 choose(file,metric['Hardware system'])
-                choose(file,metric['Included carbon life cycle stage(s)'])
+                choose(file,metric['Computer_stack'])
+                
+                
+                choose(file,metric['Datacenter stack'])
+                
                 
                 file.write("|\n")
 

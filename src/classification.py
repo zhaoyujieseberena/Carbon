@@ -240,7 +240,7 @@ file.close()
 
 
 
-file = open("./Classification/Included_carbon_life_cycle_stage(s).md", 'w')
+file = open("./Classification/Included_carbon_life_cycle_stage.md", 'w')
 with open('./.github/citation/citation.json', 'r') as f:
         citation = json.load(f)
 
@@ -253,7 +253,7 @@ with open(path, 'r') as f:
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :----: | :---------: | :---: |\n")
             for paper in table:
-                if "Manufacturing" in paper["Included carbon life cycle stage(s)"]:
+                if "Manufacturing" in paper["Included carbon life cycle stage"]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
@@ -268,7 +268,7 @@ with open(path, 'r') as f:
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "Operation" in paper["Included carbon life cycle stage(s)"]:
+                if "Operation" in paper["Included carbon life cycle stage"]:
                     file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
@@ -285,7 +285,67 @@ with open(path, 'r') as f:
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "End-of-life" in paper["Included carbon life cycle stage(s)"]:
+                if "End-of-life" in paper["Included carbon life cycle stage"]:
+                    file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
+                    file.write("{}|".format(paper['Title']))
+                    file.write("{}|".format(paper['School/Insititution']))
+                    file.write(" [[paper]]({})".format(paper['Link']))
+                    cite = citation[paper['Title']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                    file.write("|")
+                    file.write("\n")
+
+file.close()
+
+
+
+
+file = open("./Classification/Datacenter_stack.md", 'w')
+with open('./.github/citation/citation.json', 'r') as f:
+        citation = json.load(f)
+
+path = './res/papers.json'
+    
+with open(path, 'r') as f:
+            table = json.load(f)
+            
+            file.write("### {}\n".format('Application'))
+            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :----: | :---------: | :---: |\n")
+            for paper in table:
+                if "Application" in paper["Datacenter stack"]:
+                    file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
+                    file.write("{}|".format(paper['Title']))
+                    file.write("{}|".format(paper['School/Insititution']))
+                    file.write(" [[paper]]({})".format(paper['Link']))
+                    cite = citation[paper['Title']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                    file.write("|")
+                    file.write("\n")
+
+            file.write("\n")
+            file.write("### {}\n".format('Platform'))
+            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :------: | :---------: | :---: |\n")
+            for paper in table:
+                if "Platform" in paper["Datacenter stack"]:
+                    file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
+                    file.write("{}|".format(paper['Title']))
+                    file.write("{}|".format(paper['School/Insititution']))
+                    file.write(" [[paper]]({})".format(paper['Link']))
+                    cite = citation[paper['Title']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                    file.write("|")
+                    file.write("\n")
+
+            
+
+            file.write("\n")
+            file.write("### {}\n".format('Infrastructure'))
+            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :------: | :---------: | :---: |\n")
+            for paper in table:
+                if "Infrastructure" in paper["Datacenter stack"]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))

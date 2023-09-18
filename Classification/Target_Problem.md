@@ -38,6 +38,7 @@
 |Micro<br>2022|Sustainable AI Processing at the Edge|PITT| [[paper]](https://Arxiv.org/pdf/2207.01209.pdf)![Scholar citations](https://img.shields.io/badge/Citations-2-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |MLSys<br>2022|Sustainable AI: Environmental Implications, Challenges and Opportunities|Meta | [[paper]](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf)![Scholar citations](https://img.shields.io/badge/Citations-128-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |ICCAD<br>2020|ReTransformer: ReRAM-based Processing-in-Memory Architecture for Transformer Acceleration|Duke | [[paper]](https://ieeexplore.ieee.org/document/9256523)![Scholar citations](https://img.shields.io/badge/Citations-38-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|SCIS<br>2019|GreenChip: A tool for evaluating holistic sustainability of modern computing systems|Upitt| [[paper]](https://www.sciencedirect.com/science/article/pii/S2210537917300823)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Calculation
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 

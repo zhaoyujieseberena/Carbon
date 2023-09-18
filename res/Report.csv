@@ -1,4 +1,4 @@
-Description,Included carbon life cycle stage(s),Hardware system,Computer system stack ,Link
+Description,Included carbon life cycle stage,Hardware system,Computer system stack ,Link
 MCU LCA,"Operation, Manufacturing",Tiny,"Microarchitecture, Circuit",https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html
 Several product's LCAs,"Operation, Manufacturing","Datacenter, Mobile, Edge","Microarchitecture, Circuit",https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv
 Carbon intensity,Operation,"Datacenter, Mobile, Edge,Tiny",Infrastructure,https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95
