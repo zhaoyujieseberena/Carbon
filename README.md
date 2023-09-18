@@ -13,8 +13,8 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |                                                              | [![1](image/Drive.svg)Device&Tech(Devide)](Drive)            |                                                              |                                                              |
 |                                                              | [![1](image/Infrastructure.svg)Infrastructure(Infra)](Infrastructure) |                                                              |                                                              |
 ## Metrics
-| Paper| Computer system stack | Hardware system | Carbon life cycle stage(s) | Equation | 
-| :---: | :------: | :------: | :--------: | :------: |
+| Paper| Computer system stack | Hardware system | Carbon life cycle stage(s) | 
+| :---: | :------: | :------: | :--------: | 
 |PUE|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|$1+\frac{Non IT Facility Energy }{ IT Equipment Energy }$|
 |GPUE|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|$\Sigma(  \text { Source } \times(1+\text { weight }))\cdot PUE$|
 |CUE|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|$1+\frac{\text { Non IT Facility Carbon}}{\text { IT Equipment Carbon }}$|
@@ -25,8 +25,8 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |JSC|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|$\Sigma(  \text { Job} \times(1+\text { weight }))\cdot CCI$|
 |ASC|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|$\Sigma(  \text { App} \times(1+\text { weight }))\cdot CCI$|
 
-| Metric | Description | Link |  
-| :---: | :--------: | :----: | 
+| Metric | Description | Link |  Equation | 
+| :---: | :--------: | :----: | :------: |
 |PUE|Power Usage Effectiveness (PUE) of a dedicated data center| [[Paper]](https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric)|
 |GPUE|Green Power Usage Effectivenes (GPUE)| [[Paper]](https://ieeexplore.ieee.org/document/8701895)|
 |CUE|Carbon Usage Effectiveness (CUE)| [[Paper]](https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf)|
