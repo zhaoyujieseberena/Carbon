@@ -325,7 +325,7 @@ def choose(file,string):
         if i>2:
              i=0
              file.write("<br>")
-        file.write("[![1](image/Circuit.svg) Circuit](Classification/Hardware_system.md#Tiny)")
+        file.write("[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)")
     
  
 
