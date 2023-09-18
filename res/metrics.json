@@ -5,10 +5,11 @@
         "Hardware system": "Datacenter, Mobile, Edge",
         "Datacenter stack": "N/A",
         "Computer_stack": "Application",
-        "Description": "Amortized Sustainability Costs (ASC)",
+        "Description": "Amortized Sustainability Costs (**ASC**)",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$1+\\frac{Non IT Facility Energy }{ IT Equipment Energy }$"
+        "Equation": "$1+\\frac{Non IT Facility Energy }{ IT Equipment Energy }$",
+        "Details": "**ASC** is the sum of JSC and the job’s share (or tax) of embodied and other costs. If the equipment was shared with other jobs, then the taxes are spread over jobs in proportion to their equipment usage time."
     },
     {
         "Metric": "SCI",
@@ -16,10 +17,11 @@
         "Hardware system": "Datacenter, Mobile, Edge",
         "Datacenter stack": "N/A",
         "Computer_stack": "Application",
-        "Description": "Software Carbon Intensity (SCI)",
+        "Description": "Software Carbon Intensity (**SCI**)",
         "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
         "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
-        "Equation": "$\\Sigma(  \\text { Source } \\times(1+\\text { weight }))\\cdot PUE$"
+        "Equation": "$\\Sigma(  \\text { Source } \\times(1+\\text { weight }))\\cdot PUE$",
+        "Details": "**SCI** uses a lifecycle and consequentialist approach with the goal of empowering the consumers of software systems to make informed choices about the carbon impacts of those software systems. "
     },
     {
         "Metric": "JSC",
@@ -27,10 +29,11 @@
         "Hardware system": "Datacenter, Mobile, Edge",
         "Datacenter stack": "N/A",
         "Computer_stack": "OS",
-        "Description": "Job Sustainability Costs (JSC)",
+        "Description": "Job Sustainability Costs (**JSC**)",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$"
+        "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$",
+        "Details": "**JSC** is the operational CO2e spent while running the job. A “job” can be as small as a single network packet or as large as a giant DNN model that takes days to train."
     },
     {
         "Metric": "CDP/CEP",
@@ -38,10 +41,11 @@
         "Hardware system": "Datacenter, Mobile, Edge",
         "Datacenter stack": "N/A",
         "Computer_stack": "Microarchitecture",
-        "Description": "Product of Carbon Delay/Energy (CDP/CEP)",
+        "Description": "Product of Carbon Delay/Energy (**CDP/CEP**)",
         "Link": "https://ieeexplore.ieee.org/document/10122998",
         "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
-        "Equation": "$\\frac{\\text{Carbon}}{\\text{Energy}}$"
+        "Equation": "$\\frac{\\text{Carbon}}{\\text{Energy}}$",
+        "Details": "**CDP** balances embodied carbon emissions and performance. CDP is relevant when designing high performance sustainable systems such as data center hardware. <br> **CEP** balances embodied carbon emissions and energy consumption. Considering both capital and operational characteristics, CEP targets sustainable mobile devices."
     },
     {
         "Metric": "tCDP/tCEP",
@@ -49,10 +53,11 @@
         "Hardware system": "Datacenter, Mobile, Edge",
         "Datacenter stack": "N/A",
         "Computer_stack": "Microarchitecture",
-        "Description": "Product of total CO2 and total application execution time (tCDP/tCEP)",
+        "Description": "Product of total CO2 and total application execution time (**tCDP/tCEP**)",
         "Link": "https://arxiv.org/abs/2305.01831",
         "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
-        "Equation": "$\\Sigma(  \\text { Intensity } \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { Intensity } \\times(1+\\text { weight }))\\cdot CCI$",
+        "Details": " **tCDP** optimizes for the total life cycle carbon footprint of the system (Ctotal), i.e. operational and embodied, and simultaneously trade-off the conventional hardware optimization approaches of performance-power-area (PPA) and energy efficiency."
     },
     {
         "Metric": "CCI",
@@ -60,10 +65,11 @@
         "Hardware system": "Datacenter",
         "Datacenter stack": "Infrastructure",
         "Computer_stack": "N/A",
-        "Description": "Computational Carbon Intensity (CCI)",
+        "Description": "Computational Carbon Intensity (**CCI**)",
         "Link": "https://arxiv.org/abs/2110.06870",
         "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
-        "Equation": "$\\text {Carbon} \\cdot \\text {Power(Energy)}$"
+        "Equation": "$\\text {Carbon} \\cdot \\text {Power(Energy)}$",
+        "Details": "**CCI** calculates the entire lifespan of our devices amortized by the total number of operations computed in the device’s lifetime."
     },
     {
         "Metric": "CUE",
@@ -71,21 +77,11 @@
         "Hardware system": "Datacenter",
         "Datacenter stack": "Infrastructure",
         "Computer_stack": "N/A",
-        "Description": "Carbon Usage Effectiveness (CUE)",
+        "Description": "Carbon Usage Effectiveness (**CUE**)",
         "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
         "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
-        "Equation": "$t \\cdot \\text {Carbon} \\cdot \\text {Power(Energy)}$"
-    },
-    {
-        "Metric": "GPUE",
-        "Included carbon life cycle stage": "Operation",
-        "Hardware system": "Datacenter",
-        "Datacenter stack": "Infrastructure",
-        "Computer_stack": "N/A",
-        "Description": "Green Power Usage Effectivenes (GPUE)",
-        "Link": "https://ieeexplore.ieee.org/document/8701895",
-        "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
-        "Equation": "$\\Sigma(  \\text { Job} \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$t \\cdot \\text {Carbon} \\cdot \\text {Power(Energy)}$",
+        "Details": "**CUE** is a ratio that describes how efficiently a computer data center emitting carbon."
     },
     {
         "Metric": "PUE",
@@ -93,9 +89,22 @@
         "Hardware system": "Datacenter",
         "Datacenter stack": "Infrastructure",
         "Computer_stack": "N/A",
-        "Description": "Power Usage Effectiveness (PUE) of a dedicated data center",
+        "Description": "Power Usage Effectiveness (**PUE**) of a dedicated data center",
         "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
         "Papertitle": "PUE™: A Comprehensive Examination of the Metric.",
-        "Equation": "$\\Sigma(  \\text { App} \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { App} \\times(1+\\text { weight }))\\cdot CCI$",
+        "Details": "**PUE** is a ratio that describes how efficiently a computer data center uses energy; specifically, how much energy is used by the computing equipment (in contrast to cooling and other overhead that supports the equipment)."
+    },
+    {
+        "Metric": "GPUE",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter",
+        "Datacenter stack": "Infrastructure",
+        "Computer_stack": "N/A",
+        "Description": "Green Power Usage Effectivenes (**GPUE**)",
+        "Link": "https://ieeexplore.ieee.org/document/8701895",
+        "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
+        "Equation": "$\\Sigma(  \\text { Job} \\times(1+\\text { weight }))\\cdot CCI$",
+        "Details": "**GPUE** is a proposed measurement of both how much sustainable energy a computer data center uses, its carbon footprint per usable kilowatt hour (kWh) and it uses its power; specifically, how much of the power is actually used by the computing equipment (in contrast to cooling and other overhead)."
     }
 ]

@@ -1,6 +1,9 @@
 # %%
 import json
 import os
+from csv2json import run
+
+run()
 
 def load_head(file):
     with open("./res/head.md", 'r') as f:
@@ -115,7 +118,7 @@ def load_Link(file):
             for paper in table:
                     j+=1
                     file.write("|{}<a name='Link{}'></a>".format(j,j))
-                    file.write("|{}".format(metric['Name']))
+                    file.write("|{}".format(paper['Name']))
                     file.write(" |[[Link]]({})".format(paper['Link']))
                    
                     
@@ -176,7 +179,7 @@ def load_paper(file):
                 
                 
                 file.write("|\n")
-            #file.write("\n")
+            file.write("\n")
 
             file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :-: | :----: | :---------: | :---: |\n")
@@ -267,7 +270,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/Modeling.svg) Modeling ](Classification/Target_Problem.md#Modeling)")
+        file.write("[![1](image/Modeling.svg) Mod. ](Classification/Target_Problem.md#Modeling)")
     if 'OS' in string:
         i+=1
         if i>1:
@@ -371,16 +374,16 @@ def load_metrics(file):
                 file.write("|\n")
 
             file.write("\n")
-            file.write("| Metric | Description | Link |  Equation | \n")
-            file.write("| :---: | :--------: | :----: | :------: |\n")
+            file.write("| Description | Details | \n")
+            file.write(" | :-------- | :------ |\n")
 
             for metric in table:
                 
-                    file.write("|{}|".format(metric['Metric']))
+                    
                     file.write("{}|".format(metric['Description']))
                     
-                    file.write(" [[Paper]]({})".format(metric['Link']))
-                    file.write("|{}".format(metric['Equation']))
+                    file.write(" {}".format(metric['Details']))
+                    
                     file.write("|")
                     file.write("\n")
                     
