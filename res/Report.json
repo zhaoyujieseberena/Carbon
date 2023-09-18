@@ -1,0 +1,37 @@
+[
+    {
+        "Description": "MCU LCA",
+        "Included carbon life cycle stage(s)": "Operation, Manufacturing",
+        "Hardware system": "Tiny",
+        "Computer system stack ": "Microarchitecture, Circuit",
+        "Link": "https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html"
+    },
+    {
+        "Description": "Several product's LCAs",
+        "Included carbon life cycle stage(s)": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer system stack ": "Microarchitecture, Circuit",
+        "Link": "https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv"
+    },
+    {
+        "Description": "Carbon intensity",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Infrastructure",
+        "Link": "https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95"
+    },
+    {
+        "Description": "IC's Embodied carbon estimation",
+        "Included carbon life cycle stage(s)": "Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer system stack ": "Microarchitecture, Circuit",
+        "Link": "https://ieeexplore.ieee.org/document/9372004"
+    },
+    {
+        "Description": "ReRAM embodied report",
+        "Included carbon life cycle stage(s)": "Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Device&Tech",
+        "Link": "https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/"
+    }
+]

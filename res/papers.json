@@ -625,5 +625,27 @@
         "School/Insititution": "KAIST",
         "Venue": "ICACT",
         "Year": "2019"
+    },
+    {
+        "Title": "Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning",
+        "Target Problem": "Modeling",
+        "Computer system stack ": "Infrastructure",
+        "Hardware system": "Datacenter",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Link": "https://arxiv.org/abs/2002.05651",
+        "School/Insititution": "Stanford",
+        "Venue": "JMLR",
+        "Year": "2020"
+    },
+    {
+        "Title": "Eco2AI: carbon emissions tracking of machine learning models as the first step towards sustainable AI",
+        "Target Problem": "Modeling",
+        "Computer system stack ": "Application",
+        "Hardware system": "Datacenter",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Link": "https://arxiv.org/abs/2208.00406",
+        "School/Insititution": "",
+        "Venue": "Arxiv",
+        "Year": "2022"
     }
 ]

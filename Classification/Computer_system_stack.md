@@ -36,7 +36,7 @@
 |HotCarbon<br>2023|carbond: An Operating-System Daemon for Carbon Awareness|SIC| [[paper]](https://dl.acm.org/doi/abs/10.1145/3604930.3605707)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon<br>2023|EnergAt: Fine-Grained Energy Attribution for Multi-Tenancy|ETH| [[paper]](https://Arxiv.org/abs/2307.05647)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
-### Calculation
+### Microarchitecture
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 | :-: | :------: | :---------: | :---: |
 |RSER<br>2023|Assessing embodied carbon emissions of communication user Device&Techs by combining approaches|Ericsson Research| [[paper]](https://www.sciencedirect.com/science/article/pii/S1364032123002794)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
@@ -62,6 +62,21 @@
 |HotCarbon<br>2022|The Dirty Secret of SSDs: Embodied Carbon|UWM| [[paper]](https://Arxiv.org/abs/2207.10793)![Scholar citations](https://img.shields.io/badge/Citations-9-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |JCP<br>2021|Assessing the embodied carbon footprint of IoT edge Device&Techs with a bottom-up life-cycle approach|UCLouvain| [[paper]](https://Arxiv.org/abs/2105.02082)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
-### Infrasrtucture
+### Circuit
+| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
+| :-: | :------: | :---------: | :---: |
+|Arxiv<br>2023|Design space exploration and optimization for carbon-efficient extended reality systems|Harvard | [[paper]](https://Arxiv.org/abs/2305.01831)![Scholar citations](https://img.shields.io/badge/Citations-2-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Arxiv<br>2023|Is TinyML Sustainable?Assessing the Environmental Impacts of Machine Learning on Microcontrollers|Harvard| [[paper]](https://Arxiv.org/pdf/2301.11899.pdf)![Scholar citations](https://img.shields.io/badge/Citations-1-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|HotCarbon<br>2023|On the Promise and Pitfalls of Optimizing Embodied Carbon|UMASS| [[paper]](https://dl.acm.org/doi/abs/10.1145/3604930.3605710)![Scholar citations](https://img.shields.io/badge/Citations-1-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Arxiv<br>2023|Towards Sustainable Computing: Accessing the Cabon Footprint of Heterogeneous Systems|ASU| [[paper]](https://Arxiv.org/abs/2306.09434)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Arxiv<br>2023|XGen-7B Technical Report|SFR| [[paper]](https://Arxiv.org/pdf/2309.03450.pdf)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|ISCA<br>2022|ACT: Designing sustainable computer systems with an architectural carbon modeling tool|Harvard| [[paper]](https://ieeexplore.ieee.org/document/10122998)![Scholar citations](https://img.shields.io/badge/Citations-37-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+
+### Device&Tech
 | Venue  | Title | Affiliation | &nbsp;Link&nbsp; | 
 | :-: | :-----------: | :---------: | :---: |
+|Arxiv <br>2023|3D-Carbon: An Analytical Carbon Modeling Tool for 3D and 2.5D Integrated Circuits|GT| [[paper]](https://arxiv.org/abs/2307.08060)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Arxiv <br>2023|Design space exploration and optimization for carbon-efficient extended reality systems|Harvard | [[paper]](https://Arxiv.org/abs/2305.01831)![Scholar citations](https://img.shields.io/badge/Citations-2-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|ISCA <br>2022|ACT: Designing sustainable computer systems with an architectural carbon modeling tool|Harvard| [[paper]](https://ieeexplore.ieee.org/document/10122998)![Scholar citations](https://img.shields.io/badge/Citations-37-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|TCADICS  <br>2022|ESSENCE: Exploiting Structured Stochastic Gradient Pruning for Endurance-Aware ReRAM-Based In-Memory Training Systems|Duke| [[paper]](https://ieeexplore.ieee.org/document/9926186)![Scholar citations](https://img.shields.io/badge/Citations-2-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|ICCAD <br>2020|ReTransformer: ReRAM-based Processing-in-Memory Architecture for Transformer Acceleration|Duke | [[paper]](https://ieeexplore.ieee.org/document/9256523)![Scholar citations](https://img.shields.io/badge/Citations-38-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|

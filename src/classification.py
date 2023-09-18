@@ -116,7 +116,7 @@ with open(path, 'r') as f:
                     file.write("\n")
 
             file.write("\n")
-            file.write("### {}\n".format('Calculation'))
+            file.write("### {}\n".format('Microarchitecture'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
@@ -131,11 +131,26 @@ with open(path, 'r') as f:
                     file.write("\n")
 
             file.write("\n")
-            file.write("### {}\n".format('Infrasrtucture'))
+            file.write("### {}\n".format('Circuit'))
+            file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
+            file.write("| :-: | :------: | :---------: | :---: |\n")
+            for paper in table:
+                if "Circuit" in paper["Computer system stack "]:
+                    file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
+                    file.write("{}|".format(paper['Title']))
+                    file.write("{}|".format(paper['School/Insititution']))
+                    file.write(" [[paper]]({})".format(paper['Link']))
+                    cite = citation[paper['Title']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                    file.write("|")
+                    file.write("\n")
+
+            file.write("\n")
+            file.write("### {}\n".format('Device&Tech'))
             file.write("| Venue  | Title | Affiliation | &nbsp;Link&nbsp; | \n")
             file.write("| :-: | :-----------: | :---------: | :---: |\n")
             for paper in table:
-                if "Infrasrtucture" in paper["Computer system stack "]:
+                if "Device" in paper["Computer system stack "]:
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))

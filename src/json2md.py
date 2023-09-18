@@ -8,19 +8,7 @@ def load_head(file):
             file.write(line)
         file.write("\n")
 
-def load_content(file):
-    file.write("## Contents\n")
-    file.write("- [Exisiting metrics](##Exisiting metrics)\n")
-    file.write("- [Useful Links](##Useful Links)\n")
-    file.write("  - [Estimation parameters](###Estimation parameters)\n")
-    file.write("  - [Tools](###Tools)\n")
-    #file.write("  - [Calculation](###Calculation)\n")
-    file.write("- [Papers](##papers)\n")
-    file.write("  - [Review](###Review)\n")
-    file.write("  - [Optimization](###Optimization)\n")
-    file.write("  - [Calculation](###Calculation)\n")
-    file.write("  - [Standardization](###Standardization)\n")
-    file.write("\n")
+
 '''
 
     path = 'res/papers.json'
@@ -45,6 +33,122 @@ def load_lib(file):
         repo = source.split('github.com/', 1)[1]
         file.write("- [{}]({}) ![GitHub stars](https://img.shields.io/github/stars/{}.svg?logo=github&label=Stars)\n".format(name, source, repo))
 
+def load_report(file):
+    file.write("## Reports\n")
+
+    path = './res/Report.json'
+    
+    with open(path, 'r') as f:
+            table = json.load(f)
+            
+            file.write("| Description | Link | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| :---: | :----: | :------: | :------: | :--------: | \n")
+            j=0
+
+            for metric in table:
+                j+=1
+                
+                file.write("|{}".format(metric['Description']))
+                
+                file.write(" |[[Link]]({})".format(metric['Link']))
+                choose(file,metric['Computer system stack '])
+                choose(file,metric['Hardware system'])
+                
+                choose(file,metric['Included carbon life cycle stage(s)'])
+                file.write("|\n")
+            file.write("\n")
+
+    
+
+        
+
+            '''
+                file.write("- [**{}**]".format(paper['venue']))
+                file.write(" {}".format(paper['name']))
+                file.write(" (*{}*)".format(paper['affiliation']))
+                if 'link' in paper:
+                    file.write(" [[paper]]({})".format(paper['link']))
+                    cite = citation[paper['name']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                if 'source' in paper:
+                    source = paper['source']
+                    file.write(" [[code]]({})".format(source))
+                    repo = source.split('github.com/', 1)[1]
+                    if repo.count('/') == 1:
+                        file.write("![GitHub stars](https://img.shields.io/github/stars/{}.svg?logo=github&label=Stars)".format(repo))
+
+                file.write("\n")
+                '''
+
+
+
+
+def load_Link(file):
+    file.write("## Links\n")
+
+    path = './res/Link.json'
+    
+    with open(path, 'r') as f:
+            table = json.load(f)
+            
+            file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| :---: | :---: | :----: | :------: | :------: | :--------: | \n")
+            j=0
+
+            for metric in table:
+                j+=1
+                file.write("|[{}](#Link{})".format(j,j))
+                file.write("|{}".format(metric['Name']))
+                choose(file,metric['Target Problem'])
+                
+                choose(file,metric['Computer system stack '])
+                choose(file,metric['Hardware system'])
+                
+                choose(file,metric['Included carbon life cycle stage(s)'])
+                file.write("|\n")
+            file.write("\n")
+
+            file.write("| ID | Name | Link  | Paperlink | Description | \n")
+            file.write("| :-: | :-: | :-: | :----: | :---------: |\n")
+            
+            j=0
+            for paper in table:
+                    j+=1
+                    file.write("|{}<a name='Link{}'></a>".format(j,j))
+                    file.write("|{}".format(metric['Name']))
+                    file.write(" |[[Link]]({})".format(paper['Link']))
+                   
+                    
+                    file.write(" |[[paper]]({})".format(paper['Paper Link']))
+                    file.write("|{}".format(paper['Description']))
+                    file.write("|")
+                    file.write("\n")
+
+            file.write("\n")
+
+        
+
+            '''
+                file.write("- [**{}**]".format(paper['venue']))
+                file.write(" {}".format(paper['name']))
+                file.write(" (*{}*)".format(paper['affiliation']))
+                if 'link' in paper:
+                    file.write(" [[paper]]({})".format(paper['link']))
+                    cite = citation[paper['name']]['citation']
+                    file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
+                if 'source' in paper:
+                    source = paper['source']
+                    file.write(" [[code]]({})".format(source))
+                    repo = source.split('github.com/', 1)[1]
+                    if repo.count('/') == 1:
+                        file.write("![GitHub stars](https://img.shields.io/github/stars/{}.svg?logo=github&label=Stars)".format(repo))
+
+                file.write("\n")
+                '''
+
+
+
+
 def load_paper(file):
     file.write("## Papers\n")
 
@@ -56,7 +160,7 @@ def load_paper(file):
     with open(path, 'r') as f:
             table = json.load(f)
             
-            file.write("| Metric | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| Link | Target problem | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
             file.write("| :---: | :----: | :------: | :------: | :--------: | \n")
             j=0
 
@@ -88,7 +192,7 @@ def load_paper(file):
                     file.write("|")
                     file.write("\n")
 
-            file.write("|\n")
+            file.write("\n")
 
         
 
@@ -109,6 +213,7 @@ def load_paper(file):
 
                 file.write("\n")
                 '''
+
 def load_legend(file):
     
     with open("./res/legend.md", 'r') as f:
@@ -123,7 +228,7 @@ def choose(file,string):
     if 'Application' in string:
         file.write("[![1](image/App.svg)App](Classification/Computer_system_stack.md#Application)")
     if 'Datacenter' in string:
-        file.write("[![1](image/DC.svg)DC](Classification/Hardware_system.md#Datacenter)")
+        file.write("[![1](image/center.svg)DC](Classification/Hardware_system.md#Datacenter)")
     if 'Manufacturing' in string:
         file.write("[![1](image/Manufacturing.svg)MF](Classification/Included_carbon_life_cycle_stage(s).md#Manufacturing)")
     if 'Modeling' in string:
@@ -167,13 +272,14 @@ def load_metrics(file):
             table = json.load(f)
             
             
-            file.write("| Paper| Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :------: | :------: | :--------: | \n")
+            file.write("| Paper| Computer system stack | Hardware system | Carbon life cycle stage(s) | Equation | \n")
+            file.write("| :---: | :------: | :------: | :--------: | :------: |\n")
             for metric in table:
                 file.write("|{}".format(metric['Metric']))
                 choose(file,metric['Computer_stack'])
                 choose(file,metric['Hardware system'])
                 choose(file,metric['Included carbon life cycle stage(s)'])
+                file.write("|{}".format(metric['Equation']))
                 file.write("|\n")
 
             file.write("\n")
@@ -196,11 +302,6 @@ def load_metrics(file):
     
 
 
-def load_others(file):
-    file.write("\n")
-    with open("./res/Links.md", 'r') as f:
-        for line in f:
-            file.write(line)
 
 def load_contribute(file):
     with open("./res/contribute.md", 'r') as f:
@@ -211,11 +312,12 @@ def load_contribute(file):
 file = open("./test.md", 'w')
 
 load_head(file)
-load_content(file)
+
 load_legend(file)
+load_Link(file)
+load_report(file)
 load_metrics(file)
 #load_lib(file)
-load_others(file)
 load_paper(file)
 load_contribute(file)
 

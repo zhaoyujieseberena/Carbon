@@ -56,3 +56,5 @@ Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Lea
 ReTransformer: ReRAM-based Processing-in-Memory Architecture for Transformer Acceleration,Optimization,Device&Tech,"Datacenter, Edge, Mobile",Operation,https://ieeexplore.ieee.org/document/9256523,Duke ,ICCAD,2020
 The global energy footprint of information and communication technology electronics in connected Internet-of-Things Device&Techs,Modeling,"Application, Infrastructure",Tiny,"Manufacturing, Operation",sciencedirect.com/science/article/pii/S2352467720303398#sec4,ORNL,SEGN,2020
 PUE or GPUE: A Carbon-Aware Metric for Data Centers,Standardization,Infrastructure,Datacenter,Operation,https://ieeexplore.ieee.org/document/8701895,KAIST,ICACT,2019
+Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning,Modeling,Infrastructure,Datacenter,Operation,https://arxiv.org/abs/2002.05651,Stanford,JMLR,2020
+Eco2AI: carbon emissions tracking of machine learning models as the first step towards sustainable AI,Modeling,Application,Datacenter,Operation,https://arxiv.org/abs/2208.00406,,Arxiv,2022

@@ -1,83 +1,92 @@
 [
-  {
-    "Metric": "PUE",
-    "Included carbon life cycle stage(s)": "Operation",
-    "Hardware system": "Datacenter",
-    "Computer_stack": "Infrastructure",
-    "Description": "Power Usage Effectiveness of a dedicated data center",
-    "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
-    "Papertitle": "PUE™: A Comprehensive Examination of the Metric."
-  },
-  {
-    "Metric": "GPUE",
-    "Included carbon life cycle stage(s)": "Operation",
-    "Hardware system": "Datacenter",
-    "Computer_stack": "Infrastructure",
-    "Description": "Green Power Usage Effectivenes",
-    "Link": "https://ieeexplore.ieee.org/document/8701895",
-    "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers."
-  },
-  {
-    "Metric": "CUE",
-    "Included carbon life cycle stage(s)": "Operation",
-    "Hardware system": "Datacenter",
-    "Computer_stack": "Infrastructure",
-    "Description": "Carbon Usage Effectiveness",
-    "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
-    "Papertitle": "Carbon Usage Effectiveness (WUE): A Green Grid Data Center Sustainability Metric."
-  },
-  {
-    "Metric": "CCI",
-    "Included carbon life cycle stage(s)": "Operation",
-    "Hardware system": "Datacenter",
-    "Computer_stack": "Infrastructure",
-    "Description": "Computational Carbon Intensity",
-    "Link": "https://arxiv.org/abs/2110.06870",
-    "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon"
-  },
-  {
-    "Metric": "SCI",
-    "Included carbon life cycle stage(s)": "Operation, Manufacturing",
-    "Hardware system": "Datacenter, Mobile, Edge",
-    "Computer_stack": "Application",
-    "Description": "Software Carbon Intensity",
-    "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
-    "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021)."
-  },
-  {
-    "Metric": "CDP/CEP",
-    "Included carbon life cycle stage(s)": "Operation, Manufacturing",
-    "Hardware system": "Datacenter, Mobile, Edge",
-    "Computer_stack": "Microarchitecture",
-    "Description": "Product of Carbon Delay/Energy ",
-    "Link": "https://ieeexplore.ieee.org/document/10122998",
-    "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool"
-  },
-  {
-    "Metric": "tCDP/tCEP",
-    "Included carbon life cycle stage(s)": "Operation, Manufacturing",
-    "Hardware system": "Datacenter, Mobile, Edge",
-    "Computer_stack": "Microarchitecture",
-    "Description": "Product of total CO2 and total application execution time",
-    "Link": "https://arxiv.org/abs/2305.01831",
-    "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems"
-  },
-  {
-    "Metric": "JSC",
-    "Included carbon life cycle stage(s)": "Operation, Manufacturing",
-    "Hardware system": "Datacenter, Mobile, Edge",
-    "Computer_stack": "Application",
-    "Description": "Job Sustainability Costs",
-    "Link": "https://par.nsf.gov/servlets/purl/10353075",
-    "Papertitle": "Metrics for Sustainability in Data Centers"
-  },
-  {
-    "Metric": "ASC",
-    "Included carbon life cycle stage(s)": "Operation, Manufacturing",
-    "Hardware system": "Datacenter, Mobile, Edge",
-    "Computer_stack": "Application",
-    "Description": "Amortized Sustainability Costs",
-    "Link": "https://par.nsf.gov/servlets/purl/10353075",
-    "Papertitle": "Metrics for Sustainability in Data Centers"
-  }
+    {
+        "Metric": "PUE",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter",
+        "Computer_stack": "Infrastructure",
+        "Description": "Power Usage Effectiveness (PUE) of a dedicated data center",
+        "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
+        "Papertitle": "PUE™: A Comprehensive Examination of the Metric.",
+        "Equation": "$1+\\frac{\\text { Non IT Facility Energy }}{\\text { IT Equipment Energy }}$"
+    },
+    {
+        "Metric": "GPUE",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter",
+        "Computer_stack": "Infrastructure",
+        "Description": "Green Power Usage Effectivenes (GPUE)",
+        "Link": "https://ieeexplore.ieee.org/document/8701895",
+        "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
+        "Equation": "$\\Sigma(\\% \\text { EnergySource } \\times(1+\\text { weight }))\\cdot PUE$"
+    },
+    {
+        "Metric": "CUE",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter",
+        "Computer_stack": "Infrastructure",
+        "Description": "Carbon Usage Effectiveness (CUE)",
+        "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
+        "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
+        "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$"
+    },
+    {
+        "Metric": "CCI",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter",
+        "Computer_stack": "Infrastructure",
+        "Description": "Computational Carbon Intensity (CCI)",
+        "Link": "https://arxiv.org/abs/2110.06870",
+        "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
+        "Equation": "$\\frac{\\text{Carbon}}{\\text{Energy}}$"
+    },
+    {
+        "Metric": "SCI",
+        "Included carbon life cycle stage(s)": "Operation, Manufaturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer_stack": "Application",
+        "Description": "Software Carbon Intensity (SCI)",
+        "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
+        "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
+        "Equation": "$\\Sigma(\\% \\text { Souce Intensity } \\times(1+\\text { weight }))\\cdot CCI$"
+    },
+    {
+        "Metric": "CDP/CEP",
+        "Included carbon life cycle stage(s)": "Operation, Manufaturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer_stack": "Microarchitecture",
+        "Description": "Product of Carbon Delay/Energy (CDP/CEP)",
+        "Link": "https://ieeexplore.ieee.org/document/10122998",
+        "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
+        "Equation": "$\\text {Carbon} \\cdot \\text {Power(Energy)}$"
+    },
+    {
+        "Metric": "tCDP/tCEP",
+        "Included carbon life cycle stage(s)": "Operation, Manufaturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer_stack": "Microarchitecture",
+        "Description": "Product of total CO2 and total application execution time (tCDP/tCEP)",
+        "Link": "https://arxiv.org/abs/2305.01831",
+        "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
+        "Equation": "$t \\cdot \\text {Carbon} \\cdot \\text {Power(Energy)}$"
+    },
+    {
+        "Metric": "JSC",
+        "Included carbon life cycle stage(s)": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer_stack": "Application",
+        "Description": "Job Sustainability Costs (JSC)",
+        "Link": "https://par.nsf.gov/servlets/purl/10353075",
+        "Papertitle": "Metrics for Sustainability in Data Centers",
+        "Equation": "$\\Sigma(\\% \\text { Job Energy} \\times(1+\\text { weight }))\\cdot CCI$"
+    },
+    {
+        "Metric": "ASC",
+        "Included carbon life cycle stage(s)": "Operation, Manufaturing",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer_stack": "Application",
+        "Description": "Amortized Sustainability Costs (ASC)",
+        "Link": "https://par.nsf.gov/servlets/purl/10353075",
+        "Papertitle": "Metrics for Sustainability in Data Centers",
+        "Equation": "$\\Sigma(\\% \\text { Application Energy} \\times(1+\\text { weight }))\\cdot CCI$"
+    }
 ]

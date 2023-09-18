@@ -1,0 +1,6 @@
+Description,Included carbon life cycle stage(s),Hardware system,Computer system stack ,Link
+MCU LCA,"Operation, Manufacturing",Tiny,"Microarchitecture, Circuit",https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html
+Several product's LCAs,"Operation, Manufacturing","Datacenter, Mobile, Edge","Microarchitecture, Circuit",https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv
+Carbon intensity,Operation,"Datacenter, Mobile, Edge,Tiny",Infrastructure,https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95
+IC's Embodied carbon estimation,Manufacturing,"Datacenter, Mobile, Edge","Microarchitecture, Circuit",https://ieeexplore.ieee.org/document/9372004
+ReRAM embodied report,Manufacturing,"Datacenter, Mobile, Edge,Tiny",Device&Tech,https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/
