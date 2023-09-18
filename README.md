@@ -13,7 +13,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |                                                                                                  | [![1](image/Drive.svg)Device&Tech(Device)](Drive)                                                       |                                                                                      |                                                                                                                         |
 |                                                                                                  | [![1](image/Infrastructure.svg)Infrastructure(Infra)](Infrastructure)                                   |                                                                                      |                                                                                                                         |
 ## Metrics
-| &nbsp;&nbsp;Metric &nbsp;&nbsp; | Computer system stack | Hardware system | Carbon life cycle stage(s) | 
+|      Metric     | Computer system stack | Hardware system | Carbon life cycle stage(s) | 
 | :---------: | :------: | :------: | :--------: | 
 |PUE|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|
 |GPUE|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)|
