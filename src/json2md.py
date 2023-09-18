@@ -341,8 +341,8 @@ def load_metrics(file):
             table = json.load(f)
             
             
-            file.write("| Paper| Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
-            file.write("| :---: | :------: | :------: | :--------: | \n")
+            file.write("| &nbsp&nbspMetric&nbsp&nbsp | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| :---------: | :------: | :------: | :--------: | \n")
             for metric in table:
                 file.write("|{}".format(metric['Metric']))
                 choose(file,metric['Computer_stack'])
