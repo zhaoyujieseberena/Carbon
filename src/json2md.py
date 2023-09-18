@@ -348,7 +348,7 @@ def load_metrics(file):
                 choose(file,metric['Computer_stack'])
                 choose(file,metric['Hardware system'])
                 choose(file,metric['Included carbon life cycle stage(s)'])
-                file.write("|{}".format(metric['Equation']))
+                
                 file.write("|\n")
 
             file.write("\n")
@@ -361,6 +361,7 @@ def load_metrics(file):
                     file.write("{}|".format(metric['Description']))
                     
                     file.write(" [[Paper]]({})".format(metric['Link']))
+                    file.write("|{}".format(metric['Equation']))
                     file.write("|")
                     file.write("\n")
                     
