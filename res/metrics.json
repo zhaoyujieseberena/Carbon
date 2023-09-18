@@ -17,7 +17,7 @@
         "Description": "Green Power Usage Effectivenes (GPUE)",
         "Link": "https://ieeexplore.ieee.org/document/8701895",
         "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
-        "Equation": "$\\Sigma(  \\text { EnergySource } \\times(1+\\text { weight }))\\cdot PUE$"
+        "Equation": "$\\Sigma(  \\text { Source } \\times(1+\\text { weight }))\\cdot PUE$"
     },
     {
         "Metric": "CUE",
@@ -47,7 +47,7 @@
         "Description": "Software Carbon Intensity (SCI)",
         "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
         "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
-        "Equation": "$\\Sigma(  \\text { Souce Intensity } \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { Intensity } \\times(1+\\text { weight }))\\cdot CCI$"
     },
     {
         "Metric": "CDP/CEP",
@@ -77,7 +77,7 @@
         "Description": "Job Sustainability Costs (JSC)",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$\\Sigma(  \\text { Job Energy} \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { Job} \\times(1+\\text { weight }))\\cdot CCI$"
     },
     {
         "Metric": "ASC",
@@ -87,6 +87,6 @@
         "Description": "Amortized Sustainability Costs (ASC)",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$\\Sigma(  \\text { Application Energy} \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { App}} \\times(1+\\text { weight }))\\cdot CCI$"
     }
 ]
