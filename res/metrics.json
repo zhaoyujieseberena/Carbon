@@ -87,6 +87,6 @@
         "Description": "Amortized Sustainability Costs (ASC)",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$\\Sigma(  \\text { App}} \\times(1+\\text { weight }))\\cdot CCI$"
+        "Equation": "$\\Sigma(  \\text { App} \\times(1+\\text { weight }))\\cdot CCI$"
     }
 ]
