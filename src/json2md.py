@@ -341,7 +341,7 @@ def load_metrics(file):
             table = json.load(f)
             
             
-            file.write("| &nbsp&nbspMetric&nbsp&nbsp | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
+            file.write("| &nbsp;&nbsp;Metric &nbsp;&nbsp; | Computer system stack | Hardware system | Carbon life cycle stage(s) | \n")
             file.write("| :---------: | :------: | :------: | :--------: | \n")
             for metric in table:
                 file.write("|{}".format(metric['Metric']))
