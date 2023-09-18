@@ -26,11 +26,11 @@ with open(path, 'r') as f:
                     file.write("\n")
 
             file.write("\n")
-            file.write("### {}\n".format('Optimation'))
+            file.write("### {}\n".format('Optimization'))
             file.write("| Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :------: | :---------: | :---: |\n")
             for paper in table:
-                if "Optimation" in paper["Target Problem"]:
+                if "Optimization" in paper["Target Problem"]:
                     file.write("|{}<br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
