@@ -384,8 +384,9 @@ file1 = open("./Readme.md", 'w')
 load_head(file)
 
 load_legend(file)
-load_Link(file)
+
 load_metrics(file)
+load_Link(file)
 load_report(file)
 
 #load_lib(file)
