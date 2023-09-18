@@ -224,39 +224,39 @@ def load_legend(file):
 def choose(file,string):
     file.write("|")
     if 'Optimization' in string:
-        file.write("[![1](image/Optimization.svg)Opt](Classification/Target_Problem.md#Optimization)")
+        file.write("[![1](image/Optimization.svg) Opt ](Classification/Target_Problem.md#Optimization)")
     if 'Application' in string:
-        file.write("[![1](image/App.svg)App](Classification/Computer_system_stack.md#Application)")
+        file.write("[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)")
     if 'Datacenter' in string:
-        file.write("[![1](image/center.svg)DC](Classification/Hardware_system.md#Datacenter)")
+        file.write("[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)")
     if 'Manufacturing' in string:
-        file.write("[![1](image/Manufacturing.svg)MF](Classification/Included_carbon_life_cycle_stage(s).md#Manufacturing)")
+        file.write("[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage(s).md#Manufacturing)")
     if 'Modeling' in string:
-        file.write("[![1](image/Modeling.svg)Modeling](Classification/Target_Problem.md#Modeling)")
+        file.write("[![1](image/Modeling.svg) Modeling ](Classification/Target_Problem.md#Modeling)")
     if 'OS' in string:
-        file.write("[![1](image/OS.svg)OS](Classification/Computer_system_stack.md#OS)")
+        file.write("[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)")
     if 'Edge' in string:
-        file.write("[![1](image/Edge.svg)Edge](Classification/Hardware_system.md#Edge.md)")
+        file.write("[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)")
     if 'Operation' in string:
-        file.write("[![1](image/Operation.svg)Op](Classification/Included_carbon_life_cycle_stage(s).md#Operation)")
+        file.write("[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage(s).md#Operation)")
     if 'Standardization' in string:
-        file.write("[![1](image/Stand.svg)Stand.](Classification/Target_Problem.md#Standardization)")
+        file.write("[![1](image/Stand.svg) Stand. ](Classification/Target_Problem.md#Standardization)")
     if 'Microarchitecture' in string:
-        file.write("[![1](image/Micro.svg)Micro.](Classification/Computer_system_stack.md#Microarchitecture)")
+        file.write("[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)")
     if 'Mobile' in string:
-        file.write("[![1](image/Mobile.svg)Mobile](Classification/Hardware_system.md#Mobile)")
+        file.write("[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)")
     if 'End-of-life' in string:
-        file.write("[![1](image/End-of-life.svg)E-o-l](Classification/Included_carbon_life_cycle_stage(s).md#End-of-life)")
+        file.write("[![1](image/End-of-life.svg) E-o-l ](Classification/Included_carbon_life_cycle_stage(s).md#End-of-life)")
     if 'Review' in string:
-        file.write("[![1](image/Review.svg)Review](Classification/Target_Problem.md#Review)")
+        file.write("[![1](image/Review.svg) Review ](Classification/Target_Problem.md#Review)")
     if 'Infrastructure' in string:
-        file.write("[![1](image/Infrastructure.svg)Infra](Classification/Computer_system_stack.md#Infrastructure)")
+        file.write("[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)")
     if 'Tiny' in string:
-        file.write("[![1](image/Tiny.svg)Tiny](Classification/Hardware_system.md#Tiny)")
+        file.write("[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)")
     if 'Device' in string:
-        file.write("[![1](image/Drive.svg)Device&Tech](Classification/Hardware_system.md#Tiny)")
+        file.write("[![1](image/Drive.svg) Device&Tech ](Classification/Hardware_system.md#Tiny)")
     if 'Circuit' in string:
-        file.write("[![1](image/Circuit.svg)Circuit](Classification/Hardware_system.md#Tiny)")
+        file.write("[![1](image/Circuit.svg) Circuit](Classification/Hardware_system.md#Tiny)")
     
  
 
