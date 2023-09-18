@@ -310,13 +310,15 @@ def load_contribute(file):
 
 
 file = open("./Readme.md", 'w')
+file1 = open("./Readme.md", 'w')
 
 load_head(file)
 
 load_legend(file)
 load_Link(file)
-load_report(file)
 load_metrics(file)
+load_report(file)
+
 #load_lib(file)
 load_paper(file)
 load_contribute(file)
