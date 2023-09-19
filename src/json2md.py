@@ -112,7 +112,7 @@ def load_Link(file):
             file.write("\n")
 
             file.write("| ID | Name | Link  | Paperlink | Description | \n")
-            file.write("| :-: | :-: | :-: | :----: | :---------: |\n")
+            file.write("| :-: | :-: | :-: | :----: | :--------- |\n")
             
             j=0
             for paper in table:
