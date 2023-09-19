@@ -240,7 +240,7 @@ def choose(file,string):
         if i>1:
              i=1
              file.write("<br>")
-        file.write("[![1](image/Optimization.svg) Opt ](Classification/Datacenter_stack.md#Platform)")
+        file.write("[![1](image/Platform.svg) Opt ](Classification/Datacenter_stack.md#Platform)")
     if 'Optimization' in string:
         i+=1
         if i>1:
