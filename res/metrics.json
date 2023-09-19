@@ -65,7 +65,7 @@
         "Hardware system": "Datacenter, Mobile, Edge, Tiny",
         "Datacenter stack": "Application",
         "Computer_stack": "Application",
-        "Description": "**ASC**<br>Amortized Sustainability Costs",
+        "Description": "**ASC**<br>Application Sustainability Costs",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
         "Equation": "$1+\\frac{Non IT Facility Energy }{ IT Equipment Energy }$",
