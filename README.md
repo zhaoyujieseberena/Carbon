@@ -15,7 +15,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 | Metric | Details | 
  | :-------- | :------ |
-**PUE**<br>Power Usage Effectiveness| ** PUE ** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center.|
+**PUE**<br>Power Usage Effectiveness| **PUE** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center.|
 **GPUE**<br>Green Power Usage Effectivenes | **GPUE** describes the carbon footprint per kilowatt in computing tasks. It can more directly reflect the carbon efficiency of a data center than PUE.|
 **CUE**<br>Carbon Usage Effectiveness| **CUE** is average produced carbon per computing power in a data center. It can more directly reflect the carbon efficiency of a data center than PUE. It can also more directly reflect the amount of sustainable energy in the data center than GPUE.|
 **CCI**<br>Computational Carbon Intensity| **CCI** describes the average carbon footprint per computing task for a device. It characterizes the device's resource consumption based on workload rather than time.|

@@ -9,7 +9,7 @@
         "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
         "Papertitle": "PUE™: A Comprehensive Examination of the Metric.",
         "Equation": "$\\Sigma(  \\text { App} \\times(1+\\text { weight }))\\cdot CCI$",
-        "Details": "** PUE ** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center."
+        "Details": "**PUE** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center."
     },
     {
         "Metric": "GPUE",
