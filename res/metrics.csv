@@ -1,14 +1,4 @@
 Metric,Included carbon life cycle stage,Hardware system,Datacenter stack,Computer_stack,Description,Link,Papertitle,Equation,Details
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
 PUE,Operation,Datacenter,Infrastructure,N/A,**PUE**<br>Power Usage Effectiveness,https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric,PUE™: A Comprehensive Examination of the Metric.,$\Sigma(  \text { App} \times(1+\text { weight }))\cdot CCI$,** PUE ** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center.
 GPUE,Operation,Datacenter,Infrastructure,N/A,**GPUE**<br>Green Power Usage Effectivenes ,https://ieeexplore.ieee.org/document/8701895,PUE or GPUE: A carbon-aware metric for data centers.,$\Sigma(  \text { Job} \times(1+\text { weight }))\cdot CCI$,** GPUE ** describes the carbon footprint per kilowatt in the computing tasks. It can more directly reflect the carbon efficiency of a data center than PUE.
 CUE,Operation,Datacenter,Infrastructure,N/A,**CUE**<br>Carbon Usage Effectiveness,https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf,Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.,$t \cdot \text {Carbon} \cdot \text {Power(Energy)}$,** CUE ** is a raito that measures how much carbon is directly produced for computing task rather than for cooling and other support systems in a data center. It can more directly reflect the carbon efficiency of a data center than PUE. It can more directly reflect the amount of sustainable energy in the data center than GPUE.

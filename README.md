@@ -15,16 +15,6 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 | Metric | Details | 
  | :-------- | :------ |
-| |
-| |
-| |
-| |
-| |
-| |
-| |
-| |
-| |
-| |
 **PUE**<br>Power Usage Effectiveness| ** PUE ** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center.|
 **GPUE**<br>Green Power Usage Effectivenes | ** GPUE ** describes the carbon footprint per kilowatt in the computing tasks. It can more directly reflect the carbon efficiency of a data center than PUE.|
 **CUE**<br>Carbon Usage Effectiveness| ** CUE ** is a raito that measures how much carbon is directly produced for computing task rather than for cooling and other support systems in a data center. It can more directly reflect the carbon efficiency of a data center than PUE. It can more directly reflect the amount of sustainable energy in the data center than GPUE.|
@@ -37,16 +27,6 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 |      Metric   | Link | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |  
 | :--------- | :------| :------ | :------ | :-------- | :-------- | 
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
-| |[[Paper]]()|||||
 |PUE |[[Paper]](https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|N/A|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|
 |GPUE |[[Paper]](https://ieeexplore.ieee.org/document/8701895)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|N/A|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|
 |CUE |[[Paper]](https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|N/A|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|
