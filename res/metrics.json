@@ -45,7 +45,7 @@
         "Link": "https://arxiv.org/abs/2110.06870",
         "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
         "Equation": "$\\text {Carbon} \\cdot \\text {Power(Energy)}$",
-        "Details": "\n**CCI** describes the average carbon footprint per computing task for a device. It characterizes the device's resource consumption based on workload rather than time.\n"
+        "Details": "**CCI** describes the average carbon footprint per computing task for a device. It characterizes the device's resource consumption based on workload rather than time."
     },
     {
         "Metric": "SCI",
@@ -81,7 +81,7 @@
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
         "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$",
-        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model . It can describe carbon consumption at a finer granularity, such as at the thread level."
+        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model. It can describe carbon consumption at a finer granularity, such as at the thread level."
     },
     {
         "Metric": "CDP/CEP",
