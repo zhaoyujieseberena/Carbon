@@ -111,18 +111,18 @@ def load_Link(file):
                 file.write("|\n")
             file.write("\n")
 
-            file.write("| ID | Name | Link  | Paperlink | Description | \n")
-            file.write("| :-: | :-: | :-: | :----: | :--------- |\n")
+            file.write("| ID | Name | Link   | Description | \n")
+            file.write("| :-: | :-: |  :----: | :--------- |\n")
             
             j=0
             for paper in table:
                     j+=1
                     file.write("|{}<a name='Link{}'></a>".format(j,j))
                     file.write("|{}".format(paper['Name']))
-                    file.write(" |[[Link]]({})".format(paper['Link']))
+                    file.write(" |[[Source]]({})".format(paper['Link']))
                    
                     
-                    file.write(" |[[paper]]({})".format(paper['Paper Link']))
+                    file.write(" [[paper]]({})".format(paper['Paper Link']))
                     file.write("|{}".format(paper['Description']))
                     file.write("|")
                     file.write("\n")
