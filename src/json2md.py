@@ -87,7 +87,7 @@ def load_report(file):
 
 
 def load_Link(file):
-    file.write("## Links\n")
+    file.write("## Tools\n")
 
     path = './res/Link.json'
     
@@ -356,7 +356,20 @@ def load_metrics(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
-            
+            file.write("\n")
+            file.write("| Metric | Details | \n")
+            file.write(" | :-------- | :------ |\n")
+
+            for metric in table:
+                
+                    
+                    file.write("{}|".format(metric['Description']))
+                    
+                    file.write(" {}".format(metric['Details']))
+                    
+                    file.write("|")
+                    file.write("\n")
+            file.write("\n")
             
             file.write("|      Metric   | Link | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |  \n")
             file.write("| :--------- | :------| :------ | :------ | :-------- | :-------- | \n")
@@ -373,19 +386,7 @@ def load_metrics(file):
                 
                 file.write("|\n")
 
-            file.write("\n")
-            file.write("| Description | Details | \n")
-            file.write(" | :-------- | :------ |\n")
-
-            for metric in table:
-                
-                    
-                    file.write("{}|".format(metric['Description']))
-                    
-                    file.write(" {}".format(metric['Details']))
-                    
-                    file.write("|")
-                    file.write("\n")
+            
                     
            
 
