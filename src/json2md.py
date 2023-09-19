@@ -37,7 +37,7 @@ def load_lib(file):
         file.write("- [{}]({}) ![GitHub stars](https://img.shields.io/github/stars/{}.svg?logo=github&label=Stars)\n".format(name, source, repo))
 
 def load_report(file):
-    file.write("## Reports\n")
+    file.write("## Database\n")
 
     path = './res/Report.json'
     
@@ -93,6 +93,24 @@ def load_Link(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
+            file.write("| ID | Name | Link   | Description | \n")
+            file.write("| :-: | :-: |  :----: | :--------- |\n")
+            
+            j=0
+            for paper in table:
+                    j+=1
+                    file.write("|{}<a name='Link{}'></a>".format(j,j))
+                    file.write("|{}".format(paper['Name']))
+                    file.write(" |[[Source]]({})".format(paper['Link']))
+                   
+                    
+                    file.write(" [[paper]]({})".format(paper['Paper Link']))
+                    file.write("|{}".format(paper['Description']))
+                    file.write("|")
+                    file.write("\n")
+
+            file.write("\n")
+
             
             file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | \n")
             file.write("| :---: | :--- | :---- | :------ | :----- | :-------- | \n")
@@ -111,23 +129,6 @@ def load_Link(file):
                 file.write("|\n")
             file.write("\n")
 
-            file.write("| ID | Name | Link   | Description | \n")
-            file.write("| :-: | :-: |  :----: | :--------- |\n")
-            
-            j=0
-            for paper in table:
-                    j+=1
-                    file.write("|{}<a name='Link{}'></a>".format(j,j))
-                    file.write("|{}".format(paper['Name']))
-                    file.write(" |[[Source]]({})".format(paper['Link']))
-                   
-                    
-                    file.write(" [[paper]]({})".format(paper['Paper Link']))
-                    file.write("|{}".format(paper['Description']))
-                    file.write("|")
-                    file.write("\n")
-
-            file.write("\n")
 
         
 
