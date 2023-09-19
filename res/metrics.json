@@ -61,7 +61,7 @@
     },
     {
         "Metric": "ASC",
-        "Included carbon life cycle stage": "Operation,  Manufacturing",
+        "Included carbon life cycle stage": "Operation",
         "Hardware system": "Datacenter, Mobile, Edge, Tiny",
         "Datacenter stack": "Application",
         "Computer_stack": "Application",
