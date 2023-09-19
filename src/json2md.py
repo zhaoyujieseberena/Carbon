@@ -95,7 +95,7 @@ def load_Link(file):
             table = json.load(f)
             
             file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | \n")
-            file.write("| :---: | :--- | :---- | :------ | :------ | :-------- | \n")
+            file.write("| :---: | :--- | :---- | :------ | :----- | :-------- | \n")
             j=0
 
             for metric in table:
