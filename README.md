@@ -94,10 +94,10 @@ A list of carbon relevant paper links. If you have any comment, please create an
 ### Embodied carbon modeling method
 | Tools | Embodied energy | Embodied carbon intensity | 
 | :-: | :-: | :-: |
-|TinyML| Plugin LCA| Choose location or source of manufacturing.|
+|TinyML| Plugin LCA| Choose location of manufacturing.|
 |3D-Carbon| Calculate based on hardware parameters.| Choose location or source of manufacturing.|
 |ACT| Calculate based on hardware parameters.| Choose location or source of manufacturing.|
-|Greenchip| Plugin LCA| Choose location or source of manufacturing.|
+|Greenchip| Plugin LCA| N/A|
 
 ## Database
 | Description | Link | Carbon life cycle stage | Computer system stack | Hardware system |  
