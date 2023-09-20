@@ -80,7 +80,7 @@
         "Description": "**JSC**<br>Job Sustainability Costs ",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$(Energy_{app}+App\\quad tax) \\cdot CI \\quad (kg)$",
+        "Equation": "$(Energy_{app}+tax_{app}) \\cdot CI \\quad (kg)$",
         "Details": "**ASC** represents the operational CO2e emissions during the execution of an application. It comprises both its inherent consumption and the job's share (or tax) of embodied and other costs. For example, in the case of a machine learning model derived from a base model, it needs to account for adding a portion of the original model's tax."
     },
     {
