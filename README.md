@@ -15,7 +15,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 | Metric | Equation | Details | 
  | :--------| :------ | :------ |
-**PUE**<br>Power Usage Effectiveness| $\frac{Power_{Total}}{Power_{computing}}\cdot100\quad  (\%)$| **PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center.|
+**PUE**<br>Power Usage Effectiveness| $\frac{Power_{Total}}{Power_{computing}}\cdot100\quad  $(%)| **PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center.|
 **CUE**<br>Carbon Usage Effectiveness| $CI\cdot PUE\quad (kg/kwh)$ <br>CI means CO_2 intensity| **CUE** is average produced carbon per computing energy in a data center. Conputing energy is the energy directly used for computing rather than for cooling and other support systems It can more directly reflect the carbon efficiency of a data center than PUE. |
 **GPUE**<br>Green Power Usage Effectivenes | $G\cdot PUE\quad (kg/kwh)$<br>$G=\Sigma_i CI_{souce\, i}\cdot Weight_{source\, i}$| **GPUE** is average produced carbon per computing energy in a data center. Conputing energy is the energy directly used for computing rather than for cooling and other support systems It can also more directly reflect the impace of different energy source in the data center than CUE.|
 **CCI**<br>Computational Carbon Intensity| $\frac{CO_{2\,equip}}{Operations} \quad (kg)$| **CCI** describes the average carbon footprint per operation for an IT equiment. It characterizes the device's consumption based on workload rather than using time.|
