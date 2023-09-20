@@ -82,8 +82,9 @@ def load_report(file):
 
                 file.write("\n")
                 '''
-
-
+def define(file,string):
+    if '1' in string: file.write("|![1](image/yes.svg)" )
+    if '0' in string: file.write("|![1](image/no.svg)" )
 
 
 def load_Link(file):
@@ -91,8 +92,11 @@ def load_Link(file):
 
     path = './res/Link.json'
     
+    
     with open(path, 'r') as f:
             table = json.load(f)
+            
+
             file.write("| ID | Name | Link   | Description | \n")
             file.write("| :-: | :-: |  :----: | :--------- |\n")
             
@@ -104,7 +108,7 @@ def load_Link(file):
                     file.write(" |[[Source]]({})".format(paper['Link']))
                    
                     
-                    file.write(" [[paper]]({})".format(paper['Paper Link']))
+                    if (paper['Paper Link']): file.write(" [[paper]]({})".format(paper['Paper Link']))
                     file.write("|{}".format(paper['Description']))
                     file.write("|")
                     file.write("\n")
@@ -130,8 +134,75 @@ def load_Link(file):
             file.write("\n")
 
 
-        
+            file.write("### Metric configuration\n")
+            file.write("| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| \n")
+            file.write("| :-: | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n")
+            
+            j=0
+            for paper in table:
+                    j+=1
+                    file.write("|{}".format(paper['Name']))
+                    
+                    define(file,paper['Name'])
+                    define(file,paper['PUE'])
+                    define(file,paper['CUE'])
+                    define(file,paper['GPUE'])
+                    define(file,paper['CCI'])
+                    define(file,paper['SCI'])
+                    define(file,paper['ASC'])
+                    define(file,paper['JSC'])
+                    define(file,paper['CDP/CEP'])
+                    define(file,paper['tCDP/tCEP'])
+                  
+                    
+                    
+                    file.write("|")
+                    file.write("\n")
 
+            file.write("\n")
+
+            file.write("### Operational carbon modeling method\n")
+            file.write("| Tools| Operational energy | Operational usage | Operationcal carbon intensity |  \n")
+            file.write("| :-: | :-: |  :-: | :-: | \n")
+            
+            j=0
+            for paper in table:
+                    j+=1
+                    file.write("|{}".format(paper['Name']))
+                    
+                    file.write("| CPU:{}<br> GPU:{}".format(paper['Operation CPU energy'],paper['Operation GPU energy']))
+                    file.write("|CPU:{}<br> GPU:{}".format(paper['Operation CPU usage'],paper['Operation GPU usage']))
+                    file.write("| {}".format(paper['Operation intensity']))
+                    
+                  
+                    
+                    
+                    file.write("|")
+                    file.write("\n")
+
+            file.write("\n")
+
+            file.write("### Embodied carbon modeling method\n")
+            file.write("| Tools | Embodied energy | Embodied carbon intensity | \n")
+            file.write("| :-: | :-: | :-: |\n")
+            
+            j=0
+            for paper in table:
+                    j+=1
+                    if 'Manufacturing' in paper['Included carbon life cycle stage']:
+                        file.write("|{}".format(paper['Name']))
+                        
+                        
+                        file.write("| {}".format(paper['Embodied carbon']))
+                        file.write("| {}".format(paper['Embodied carbon intensity']))
+
+                    
+                        
+                        
+                        file.write("|")
+                        file.write("\n")
+
+            file.write("\n")
             '''
                 file.write("- [**{}**]".format(paper['venue']))
                 file.write(" {}".format(paper['name']))
@@ -358,14 +429,14 @@ def load_metrics(file):
     with open(path, 'r') as f:
             table = json.load(f)
             file.write("\n")
-            file.write("| Metric | Details | \n")
-            file.write(" | :-------- | :------ |\n")
+            file.write("| Metric | Equation | Details | \n")
+            file.write(" | :--------| :------ | :------ |\n")
 
             for metric in table:
                 
                     
                     file.write("{}|".format(metric['Description']))
-                    
+                    file.write(" {}|".format(metric['Equation']))
                     file.write(" {}".format(metric['Details']))
                     
                     file.write("|")

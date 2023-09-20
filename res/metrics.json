@@ -8,8 +8,20 @@
         "Description": "**PUE**<br>Power Usage Effectiveness",
         "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
         "Papertitle": "PUE™: A Comprehensive Examination of the Metric.",
-        "Equation": "$\\Sigma(  \\text { App} \\times(1+\\text { weight }))\\cdot CCI$",
-        "Details": "**PUE** is a raito that measures how much energy is directly used for computing task rather than for cooling and other support systems in a data center."
+        "Equation": "$\\frac{Power_{Total}}{Power_{computing}}\\cdot100\\quad  (\\%)$",
+        "Details": "**PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center."
+    },
+    {
+        "Metric": "CUE",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
+        "Datacenter stack": "Infrastructure",
+        "Computer_stack": "N/A",
+        "Description": "**CUE**<br>Carbon Usage Effectiveness",
+        "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
+        "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
+        "Equation": "$CI\\cdot PUE\\quad (kg/kwh)$ <br>CI means CO_2 intensity",
+        "Details": "**CUE** is average produced carbon per computing energy in a data center. Conputing energy is the energy directly used for computing rather than for cooling and other support systems It can more directly reflect the carbon efficiency of a data center than PUE. "
     },
     {
         "Metric": "GPUE",
@@ -20,20 +32,8 @@
         "Description": "**GPUE**<br>Green Power Usage Effectivenes ",
         "Link": "https://ieeexplore.ieee.org/document/8701895",
         "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
-        "Equation": "$\\Sigma(  \\text { Job} \\times(1+\\text { weight }))\\cdot CCI$",
-        "Details": "**GPUE** describes the carbon footprint per kilowatt in computing tasks. It can more directly reflect the carbon efficiency of a data center than PUE."
-    },
-    {
-        "Metric": "CUE",
-        "Included carbon life cycle stage": "Operation",
-        "Hardware system": "Datacenter",
-        "Datacenter stack": "Infrastructure",
-        "Computer_stack": "N/A",
-        "Description": "**CUE**<br>Carbon Usage Effectiveness",
-        "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
-        "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
-        "Equation": "$t \\cdot \\text {Carbon} \\cdot \\text {Power(Energy)}$",
-        "Details": "**CUE** is average produced carbon per computing power in a data center. It can more directly reflect the carbon efficiency of a data center than PUE. It can also more directly reflect the amount of sustainable energy in the data center than GPUE."
+        "Equation": "$G\\cdot PUE\\quad (kg/kwh)$<br>$G=\\Sigma_i CI_{souce\\, i}\\cdot Weight_{source\\, i}$",
+        "Details": "**GPUE** is average produced carbon per computing energy in a data center. Conputing energy is the energy directly used for computing rather than for cooling and other support systems It can also more directly reflect the impace of different energy source in the data center than CUE."
     },
     {
         "Metric": "CCI",
@@ -44,8 +44,8 @@
         "Description": "**CCI**<br>Computational Carbon Intensity",
         "Link": "https://arxiv.org/abs/2110.06870",
         "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
-        "Equation": "$\\text {Carbon} \\cdot \\text {Power(Energy)}$",
-        "Details": "**CCI** describes the average carbon footprint per computing task for a device. It characterizes the device's resource consumption based on workload rather than time."
+        "Equation": "$\\frac{CO_{2\\,equip}}{Operations} \\quad (kg)$",
+        "Details": "**CCI** describes the average carbon footprint per operation for an IT equiment. It characterizes the device's consumption based on workload rather than using time."
     },
     {
         "Metric": "SCI",
@@ -56,8 +56,8 @@
         "Description": "**SCI**<br>Software Carbon Intensity ",
         "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
         "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
-        "Equation": "$\\Sigma(  \\text { Source } \\times(1+\\text { weight }))\\cdot PUE$",
-        "Details": "**SCI** describes the average carbon footprint per computing task for an application. It can describe carbon consumption at a finer granularity than CCI."
+        "Equation": "$\\frac{CO_{2\\,app}}{Operations}\\quad  (kg)$",
+        "Details": "**SCI** describes the average carbon footprint per operation for an application. It can describe carbon consumption at a finer granularity than CCI."
     },
     {
         "Metric": "ASC",
@@ -68,8 +68,8 @@
         "Description": "**ASC**<br>Application Sustainability Costs",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$1+\\frac{Non IT Facility Energy }{ IT Equipment Energy }$",
-        "Details": "**ASC** represents the operational CO2e emissions during the execution of an application. It comprises both its inherent consumption and the job's share (or tax) of embodied and other costs. For example, in the case of a machine learning model derived from a base model, it needs to account for adding a portion of the original model's tax."
+        "Equation": "$Energy_{job} \\cdot CI \\quad  (kg)$",
+        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model. It can describe carbon consumption at a finer granularity, such as at the thread level."
     },
     {
         "Metric": "JSC",
@@ -80,8 +80,8 @@
         "Description": "**JSC**<br>Job Sustainability Costs ",
         "Link": "https://par.nsf.gov/servlets/purl/10353075",
         "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$1+\\frac{\\text { Non IT Facility Carbon}}{\\text { IT Equipment Carbon }}$",
-        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model. It can describe carbon consumption at a finer granularity, such as at the thread level."
+        "Equation": "$(Energy_{app}+App\\quad tax) \\cdot CI \\quad (kg)$",
+        "Details": "**ASC** represents the operational CO2e emissions during the execution of an application. It comprises both its inherent consumption and the job's share (or tax) of embodied and other costs. For example, in the case of a machine learning model derived from a base model, it needs to account for adding a portion of the original model's tax."
     },
     {
         "Metric": "CDP/CEP",
@@ -92,7 +92,7 @@
         "Description": "**CDP/CEP** Product of Carbon Delay/Energy ",
         "Link": "https://ieeexplore.ieee.org/document/10122998",
         "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
-        "Equation": "$\\frac{\\text{Carbon}}{\\text{Energy}}$",
+        "Equation": "$CO_{2\\, emb} \\cdot Delay \\quad  (kg\\cdot s)$ <br> $CO_{2\\, emb} \\cdot Energy_{op} \\quad (kg\\cdot J)$",
         "Details": "**CDP** is the product of embodied carbon and delay for a chip. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
     },
     {
@@ -104,7 +104,7 @@
         "Description": "**tCDP/tCEP** <br> Product of total CO2 and total application execution time",
         "Link": "https://arxiv.org/abs/2305.01831",
         "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
-        "Equation": "$\\Sigma(  \\text { Intensity } \\times(1+\\text { weight }))\\cdot CCI$",
-        "Details": "**tCDP**  is the product of carbon within a specified time period, t and delay for a chip. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
+        "Equation": "$CO_{2\\, app} \\cdot Delay \\quad  (kg\\cdot s)$ <br> $CO_{2\\, app}\\cdot Energy_{op} \\quad  (kg\\cdot J)$<br>$CO_{2\\,app}=CO_{2\\, op}+\\frac{app exe time}{HW life time}CO_{2\\, emb} $",
+        "Details": "**tCDP**  is the product of carbon within a specified time period, t and delay for an application on a chip. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
     }
 ]
