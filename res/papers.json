@@ -706,5 +706,17 @@
         "School/Insititution": "KAIST",
         "Venue": "ICACT",
         "Year": "2019"
+    },
+    {
+        "Title": "Data-Centric Green Artificial Intelligence: A Survey",
+        "Target Problem": "Review ",
+        "Computer system stack ": "Appliaction",
+        "Datacenter stack": "Application,Platform, Infrastructure",
+        "Hardware system": "Datacenter",
+        "Included carbon life cycle stage": "End-of-life, Manufacturing, Operation",
+        "Link": "https://arxiv.org/abs/2303.10158",
+        "School/Insititution": "",
+        "Venue": "Rice",
+        "Year": "2023"
     }
 ]

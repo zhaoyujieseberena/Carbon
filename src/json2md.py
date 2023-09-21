@@ -26,20 +26,12 @@ def load_head(file):
 
     file.write("- [Contribute](#contribute)\n")
 '''
-def load_lib(file):
-    file.write("## Open Source Libraries\n")
-    with open("res/library.json", 'r') as f:
-        libraries = json.load(f)
-    for lib in libraries:
-        name = lib['name']
-        source = lib['source']
-        repo = source.split('github.com/', 1)[1]
-        file.write("- [{}]({}) ![GitHub stars](https://img.shields.io/github/stars/{}.svg?logo=github&label=Stars)\n".format(name, source, repo))
+
 
 def load_report(file):
-    file.write("## Database\n")
+    file.write("## Datasets\n")
 
-    path = './res/Report.json'
+    path = './res/datasets.json'
     
     with open(path, 'r') as f:
             table = json.load(f)
@@ -88,9 +80,10 @@ def define(file,string):
 
 
 def load_Link(file):
-    file.write("## Tools\n")
+    file.write("## Links\n")
+    file.write("### Tools\n")
 
-    path = './res/Link.json'
+    path = './res/tools.json'
     
     
     with open(path, 'r') as f:
@@ -162,8 +155,8 @@ def load_Link(file):
             file.write("\n")
 
             file.write("### Operational carbon modeling method\n")
-            file.write("| Tools| Operational energy | Operational usage | Operationcal carbon intensity |  \n")
-            file.write("| :-: | :-: |  :-: | :-: | \n")
+            file.write("| Tools| Operational energy | Operational usage | Operational carbon intensity |  \n")
+            file.write("| :-: | :- |  :- | :- | \n")
             
             j=0
             for paper in table:
@@ -184,7 +177,7 @@ def load_Link(file):
 
             file.write("### Embodied carbon modeling method\n")
             file.write("| Tools | Embodied energy | Embodied carbon intensity | \n")
-            file.write("| :-: | :-: | :-: |\n")
+            file.write("| :-: | :- | :- |\n")
             
             j=0
             for paper in table:
@@ -234,24 +227,6 @@ def load_paper(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
-            
-            file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")
-            file.write("| :---: | :---- | :------ | :------ | :-------- |:-------- | \n")
-            j=0
-
-            for metric in table:
-                j+=1
-                file.write("|[{}](#paper{})".format(j,j))
-                choose(file,metric['Target Problem'])
-                choose(file,metric['Included carbon life cycle stage'])
-                choose(file,metric['Hardware system'])
-                choose(file,metric['Computer system stack '])
-                choose(file,metric['Datacenter stack'])
-                
-                
-                
-                file.write("|\n")
-            file.write("\n")
 
             file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :-: | :----: | :---------: | :---: |\n")
@@ -271,6 +246,28 @@ def load_paper(file):
 
             file.write("\n")
 
+            
+            file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")
+            file.write("| :---: | :---- | :------ | :------ | :-------- |:-------- | \n")
+            j=0
+
+            
+
+            for metric in table:
+                j+=1
+                file.write("|[{}](#paper{})".format(j,j))
+                choose(file,metric['Target Problem'])
+                choose(file,metric['Included carbon life cycle stage'])
+                choose(file,metric['Hardware system'])
+                choose(file,metric['Computer system stack '])
+                choose(file,metric['Datacenter stack'])
+                
+                
+                
+                file.write("|\n")
+            file.write("\n")
+
+            
         
 
             '''

@@ -38,8 +38,8 @@ def run():
     # 4. 将JSON对象写入文件
     with open(json_file, 'w', encoding='utf-8') as jsonfile:
         jsonfile.write(json_data)
-    csv_file = './res/Report.csv'  
-    json_file = './res/Report.json'  
+    csv_file = './res/datasets.csv'  
+    json_file = './res/datasets.json'  
 
     data = []
 
@@ -56,8 +56,8 @@ def run():
     with open(json_file, 'w', encoding='utf-8') as jsonfile:
         jsonfile.write(json_data)
 
-    csv_file = './res/Link.csv'  
-    json_file = './res/Link.json'  
+    csv_file = './res/tools.csv'  
+    json_file = './res/tools.json'  
 
     data = []
 

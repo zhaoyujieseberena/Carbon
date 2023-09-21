@@ -58,3 +58,4 @@ The global energy footprint of information and communication technology electron
 Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning,Modeling,Appliaction,"Infrastructure, Appliaction",Datacenter,Operation,https://arxiv.org/abs/2002.05651,Stanford,JMLR,2020
 GreenChip: A tool for evaluating holistic sustainability of modern computing systems,"Modeling, Optimization",Microarchitecture,N/A,"Datacenter, Edge, Mobile, Tiny","End-of-life, Manufacturing, Operation",https://www.sciencedirect.com/science/article/pii/S2210537917300823,Upitt,SCIS,2019
 PUE or GPUE: A Carbon-Aware Metric for Data Centers,Standardization, N/A,Infrastructure,Datacenter,Operation,https://ieeexplore.ieee.org/document/8701895,KAIST,ICACT,2019
+Data-Centric Green Artificial Intelligence: A Survey,Review ,Appliaction,"Application,Platform, Infrastructure",Datacenter,"End-of-life, Manufacturing, Operation",https://arxiv.org/abs/2303.10158,,Rice,2023
