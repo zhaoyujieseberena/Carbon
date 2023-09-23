@@ -29,15 +29,19 @@ def load_head(file):
 
 
 def load_report(file):
-    file.write("## Datasets\n")
+    file.write("## The parameters sources\n")
+    
 
     path = './res/datasets.json'
     
     with open(path, 'r') as f:
             table = json.load(f)
+            file.write("#### A summary of parameters sources\n")
+            file.write('A list of some links that can be used as sources formodeling and calculating parameters\n')
+
             
-            file.write("| Description | Link | Carbon life cycle stage | Computer system stack | Hardware system |  \n")
-            file.write("| :--- | :---- | :------| :------ | :-------- | \n")
+            file.write("| Title | Link | Descriptions |  \n")
+            file.write("| :--- | :----  | :-------- | \n")
             j=0
 
             for metric in table:
@@ -45,11 +49,32 @@ def load_report(file):
                 
                 file.write("|{}".format(metric['Description']))
                 
-                file.write(" |[[Link]]({})".format(metric['Link']))
+                file.write(" |[[{}]]({})".format(metric['status'],metric['Link']))
+                #choose(file,metric['Computer system stack '])
+                #choose(file,metric['Hardware system'])
+                
+                #choose(file,metric['Included carbon life cycle stage'])
+                file.write("|{}".format(metric['Descriptions']))
+                file.write("|\n")
+            file.write("\n")
+            file.write("#### Application scope of parameters sources\n")
+
+            file.write("| Title |  Carbon life cycle stage | Computer system stack | Hardware system | \n")
+            file.write("| :--- | :---- | :------| :------ |  \n")
+            j=0
+
+
+            for metric in table:
+                j+=1
+                
+                file.write("|{}".format(metric['Description']))
+                
+                
                 choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
                 
                 choose(file,metric['Included carbon life cycle stage'])
+               
                 file.write("|\n")
             file.write("\n")
 
@@ -80,8 +105,8 @@ def define(file,string):
 
 
 def load_Link(file):
-    file.write("## Links\n")
-    file.write("### Tools\n")
+    file.write("## Tools\n")
+    
 
     path = './res/tools.json'
     
@@ -98,7 +123,7 @@ def load_Link(file):
                     j+=1
                     file.write("|{}<a name='Link{}'></a>".format(j,j))
                     file.write("|{}".format(paper['Name']))
-                    file.write(" |[[Source]]({})".format(paper['Link']))
+                    file.write(" |[[code]]({})".format(paper['Link']))
                    
                     
                     if (paper['Paper Link']): file.write(" [[paper]]({})".format(paper['Paper Link']))
@@ -127,13 +152,14 @@ def load_Link(file):
             file.write("\n")
 
 
-            file.write("### Metric configuration\n")
-            file.write("| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| \n")
-            file.write("| :-: | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n")
+            file.write("#### a summary of metrics can be calculated by tools \n")
+            file.write("|ID| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| \n")
+            file.write("|:-:| :- | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n")
             
             j=0
             for paper in table:
                     j+=1
+                    file.write("|[{}](#Link{})".format(j,j))
                     file.write("|{}".format(paper['Name']))
                     
                     define(file,paper['Name'])
@@ -227,6 +253,8 @@ def load_paper(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
+            file.write("### Papers overview\n")
+            file.write("We have listed some relevant literature in the field of sustainable computer systems below.\n")
 
             file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
             file.write("| :-: | :-: | :----: | :---------: | :---: |\n")
@@ -245,6 +273,7 @@ def load_paper(file):
                     file.write("\n")
 
             file.write("\n")
+            file.write("### Papers' application scope\n")
 
             
             file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")
@@ -426,6 +455,8 @@ def load_metrics(file):
     with open(path, 'r') as f:
             table = json.load(f)
             file.write("\n")
+            file.write("### Metrics overview\n")
+            
             file.write("| Metric | Equation | Details | \n")
             file.write(" | :--------| :------ | :------ |\n")
 
@@ -439,7 +470,7 @@ def load_metrics(file):
                     file.write("|")
                     file.write("\n")
             file.write("\n")
-            
+            file.write("### Metrics application usage\n")
             file.write("|      Metric   | Link | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |  \n")
             file.write("| :--------- | :------| :------ | :------ | :-------- | :-------- | \n")
             for metric in table:

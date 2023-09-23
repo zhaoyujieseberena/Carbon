@@ -1,37 +1,92 @@
 [
     {
         "Description": "MCU LCA",
+        "status": "website",
         "Included carbon life cycle stage": "Operation, Manufacturing",
         "Hardware system": "Tiny",
         "Computer system stack ": "Microarchitecture, Circuit",
-        "Link": "https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html"
+        "Datacenter stack": "N/A",
+        "Link": "https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html",
+        "Descriptions": "A website where you can find LCA reports for some specific MCU products."
     },
     {
-        "Description": "Several product's LCAs",
+        "Description": "Carbon Intensity API",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://carbonintensity.org.uk/",
+        "Descriptions": "The Carbon Intensity API uses state-of-the-art Machine Learning and sophisticated power system modelling to forecast the carbon intensity and generation mix 96+ hours ahead for each region in Great Britain."
+    },
+    {
+        "Description": "Environmental Footprint Data",
+        "status": "repository",
         "Included carbon life cycle stage": "Operation, Manufacturing",
         "Hardware system": "Datacenter, Mobile, Edge",
         "Computer system stack ": "Microarchitecture, Circuit",
-        "Link": "https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv"
+        "Datacenter stack": "Platform",
+        "Link": "https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv",
+        "Descriptions": "Examples include life cycle assessments of many devices such as servers, notebooks, and IoT from many companies such as Apple, Dell, and HP."
     },
     {
         "Description": "Carbon intensity",
-        "Included carbon life cycle stage": "Operation",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
         "Hardware system": "Datacenter, Mobile, Edge,Tiny",
-        "Computer system stack ": "Infrastructure",
-        "Link": "https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95"
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95",
+        "Descriptions": "A dataset collection published in 2022 describes the carbon intensity of electricity generation for different countries."
     },
     {
-        "Description": "IC's Embodied carbon estimation",
+        "Description": "DTCO including Sustainability",
+        "status": "paper",
         "Included carbon life cycle stage": "Manufacturing",
         "Hardware system": "Datacenter, Mobile, Edge",
         "Computer system stack ": "Microarchitecture, Circuit",
-        "Link": "https://ieeexplore.ieee.org/document/9372004"
+        "Datacenter stack": "Platform",
+        "Link": "https://ieeexplore.ieee.org/document/9372004",
+        "Descriptions": "This article describes the energy consumption per unit area of several processes at different technology nodes in the logic IC manufacturing process."
     },
     {
-        "Description": "ReRAM embodied report",
+        "Description": "Weebit ReRAM",
+        "status": "web page",
         "Included carbon life cycle stage": "Manufacturing",
         "Hardware system": "Datacenter, Mobile, Edge,Tiny",
         "Computer system stack ": "Device&Tech",
-        "Link": "https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/"
+        "Datacenter stack": "Platform",
+        "Link": "https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/",
+        "Descriptions": "This page describes the amount of carbon dioxide emissions that ReRAM reduces during its life cycle compared to regular MRAM."
+    },
+    {
+        "Description": "RAPL",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Edge",
+        "Computer system stack ": "OS",
+        "Datacenter stack": "Platform",
+        "Link": "https://github.com/hubblo-org/windows-rapl-driver",
+        "Descriptions": "RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system."
+    },
+    {
+        "Description": "ENERGI DATA SERVICE",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://www.energidataservice.dk/",
+        "Descriptions": "It tracks the retail prices of motor fuel, electricity, and natural gas for Denmark."
+    },
+    {
+        "Description": "Global Petrol Prices",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://www.globalpetrolprices.com/",
+        "Descriptions": "It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries."
     }
 ]
