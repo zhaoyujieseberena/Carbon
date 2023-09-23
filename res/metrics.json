@@ -93,7 +93,7 @@
         "Link": "https://ieeexplore.ieee.org/document/10122998",
         "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
         "Equation": "$CO_{2\\, emb} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, emb} \\cdot Energy_{op}$<br>unit: $kg\\cdot J$",
-        "Details": "**CDP** is the product of embodied carbon and delay for a chip. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
+        "Details": "**CDP** is the product of embodied carbon and delay for a device. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
     },
     {
         "Metric": "tCDP/tCEP",
