@@ -60,7 +60,7 @@
         "Computer system stack ": "Application, OS",
         "Target Problem": "Modeling",
         "Paper Link": "https://arxiv.org/abs/2208.00406",
-        "Operation CPU energy": "$TDP$",
+        "Operation CPU energy": " $TDP_{cpu}$",
         "Operation CPU usage": "uses os",
         "Operation GPU energy": " Uses pynvml library",
         "Operation GPU usage": "N/A",

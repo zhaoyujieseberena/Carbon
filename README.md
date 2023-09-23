@@ -6,13 +6,13 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 - [Legend](#Legend)
 - [Metrics](#Metrics)
+
+- [Tools](#Tools)
+  - [Metric configuration](#Metric configuration)
+  - [Operational carbon modeling method](#Operational carbon modeling method)
+  - [Embodied carbon modeling method](#Embodied carbon modeling method)
+- [The parameters sources](#The parameters sources)
 - [Papers](#Papers)
-- [Links](#Links)
-  - [Tools](#Tools)
-    - [Metric configuration](Metric configuration)
-    - [Operational carbon modeling method](Operational carbon modeling method)
-    - [Embodied carbon modeling method](Embodied carbon modeling method)
-  - [Datasets](Datasets)
 
 ## Legend
 
@@ -96,7 +96,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 | :-: | :- |  :- | :- | 
 |Codecarbon| CPU: RAPL file<br> GPU:Uses pynvml library|CPU:50%<br> GPU:N/A| Choose location of operation|
 |Carbontracker| CPU: RAPL file<br> GPU: Uses pynvml library|CPU:RAPL files<br> GPU:N/A| Using external APIs or choose location of operation.|
-|Eco2AI| CPU:$TDP$<br> GPU: Uses pynvml library|CPU:uses os<br> GPU:N/A| Choose location of operation|
+|Eco2AI| CPU: $TDP_{cpu}$<br> GPU: Uses pynvml library|CPU:uses os<br> GPU:N/A| Choose location of operation|
 |EIT| CPU: RAPL file<br> GPU: Uses pynvml library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
 |GreenAlgorithms| CPU: $TDP_{core}\cdot core number$ <br> GPU: $TDP_{per GPU}$|CPU:100%<br> GPU:100%| Choose location or source of operation|
 |Cumulator| CPU:N/A<br> GPU: $TDP_{per GPU}$ |CPU:N/A<br> GPU:N/A| Choose location or time of operation|
