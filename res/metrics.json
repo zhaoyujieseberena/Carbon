@@ -20,7 +20,7 @@
         "Description": "**CUE**<br>Carbon Usage Effectiveness",
         "Link": "https://airatwork.com/wp-content/uploads/The-Green-Grid-White-Paper-32-CUE-Usage-Guidelines.pdf",
         "Papertitle": "Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric.",
-        "Equation": "$CI\\cdot PUE $ <br>unit: $kg/kwh$<br>where $CI$ is $CO_2$ intensity",
+        "Equation": "$CI\\cdot PUE$ <br>unit: $kg/kwh$<br>where $CI$ is $CO_2$ intensity",
         "Details": "**CUE** is average produced carbon per computing energy in a data center. Computing energy is the energy directly used for computing rather than for cooling and other support systems It can more directly reflect the carbon efficiency of a data center than PUE. "
     },
     {
@@ -32,7 +32,7 @@
         "Description": "**GPUE**<br>Green Power Usage Effectivenes ",
         "Link": "https://ieeexplore.ieee.org/document/8701895",
         "Papertitle": "PUE or GPUE: A carbon-aware metric for data centers.",
-        "Equation": "$G\\cdot PUE  $<br>unit: $kg/kwh$<br>where $G=$<br>$\\Sigma_i CI_{souce\\, i}\\cdot Weight_{source\\, i}$",
+        "Equation": "$G\\cdot PUE$<br>unit: $kg/kwh$<br>where $G=$<br>$\\Sigma_i CI_{souce\\, i}\\cdot Weight_{source\\, i}$",
         "Details": "**GPUE** describes the same metrics as CUE. What’s more, it considers that carbon intensity is composed of energy from different sources with a certain weight."
     },
     {
@@ -56,7 +56,7 @@
         "Description": "**SCI**<br>Software Carbon Intensity ",
         "Link": "https://github.com/Green-Software-Foundation/sci/blob/main/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md",
         "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
-        "Equation": "$\\frac{CO_{2\\,app}}{OPs_{app}} $<br>unit: $kg$",
+        "Equation": "$\\frac{CO_{2\\, app}}{OPs_{app}} $<br>unit: $kg$",
         "Details": "**SCI** describes the average carbon footprint per operation for an application. It can describe carbon consumption at a finer granularity than CCI."
     },
     {
@@ -92,7 +92,7 @@
         "Description": "**CDP/CEP** Product of Carbon Delay/Energy ",
         "Link": "https://ieeexplore.ieee.org/document/10122998",
         "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
-        "Equation": "$CO_{2\\, emb} \\cdot Delay $ <br>unit: $kg\\cdot s$<br> $CO_{2\\, emb} \\cdot Energy_{op}$<br>unit: $kg\\cdot J$",
+        "Equation": "$CO_{2\\, emb} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, emb} \\cdot Energy_{op}$<br>unit: $kg\\cdot J$",
         "Details": "**CDP** is the product of embodied carbon and delay for a chip. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
     },
     {
@@ -104,7 +104,7 @@
         "Description": "**tCDP/tCEP** <br> Product of total CO2 and total application execution time",
         "Link": "https://arxiv.org/abs/2305.01831",
         "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
-        "Equation": "$CO_{2\\, app} \\cdot Delay   $ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>$CO_{2\\,app}=CO_{2\\, op}+$<br>$  \\frac{time_{app}}{HW _{life time}}CO_{2\\, emb} $",
+        "Equation": "$CO_{2\\, app} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>$CO_{2\\,app}=CO_{2\\, op}+$<br>$  \\frac{time_{app}}{HW _{life time}}CO_{2\\, emb} $",
         "Details": "**tCDP**  is the product of carbon within a specified time period, and delay for an application on a device. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
     }
 ]
