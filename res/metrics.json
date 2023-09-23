@@ -104,7 +104,7 @@
         "Description": "**tCDP/tCEP** <br> Product of total CO2 and total application execution time",
         "Link": "https://arxiv.org/abs/2305.01831",
         "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
-        "Equation": "$CO_{2\\, app} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>$CO_{2\\,app}=CO_{2\\, op}+$<br>$  \\frac{time_{app}}{HW _{life time}}CO_{2\\, emb} $",
+        "Equation": "$CO_{2\\, app} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>$CO_{2\\,app}=CO_{2\\, op}+$<br>$\\frac{time_{app}}{HW _{life time}}CO_{2\\, emb$",
         "Details": "**tCDP**  is the product of carbon within a specified time period, and delay for an application on a device. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
     }
 ]
