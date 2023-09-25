@@ -9,19 +9,21 @@
         "Link": "https://hotcarbon.org/2023/pdf/a7-lyu.pdf",
         "School/Insititution": "UToronto",
         "Venue": "HotCarbon",
-        "Year": "2024"
+        "Year": "2024",
+        "Source": ""
     },
     {
         "Title": "3D-Carbon: An Analytical Carbon Modeling Tool for 3D and 2.5D Integrated Circuits",
         "Target Problem": "Modeling",
         "Computer system stack ": "Device&Tech",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://arxiv.org/abs/2307.08060",
         "School/Insititution": "GT",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": "https://anonymous.4open.science/r/3D-Carbon-9D5B"
     },
     {
         "Title": "An Agile Pathway Towards Carbon-aware Clouds",
@@ -33,7 +35,8 @@
         "Link": "https://hotcarbon.org/2023/pdf/a10-patel.pdf",
         "School/Insititution": "UW",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Assessing embodied carbon emissions of communication user Device&Techs by combining approaches",
@@ -45,7 +48,8 @@
         "Link": "https://www.sciencedirect.com/science/article/pii/S1364032123002794",
         "School/Insititution": "Ericsson Research",
         "Venue": "RSER",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Bringing Carbon Awareness to Multi-cloud Application Delivery",
@@ -57,7 +61,8 @@
         "Link": "https://hotcarbon.org/2023/pdf/a6-maji.pdf",
         "School/Insititution": "UMA",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Carbon Explorer: A Holistic Framework for Designing Carbon Aware Datacenters",
@@ -69,19 +74,21 @@
         "Link": "https://Arxiv.org/pdf/2201.10036.pdf",
         "School/Insititution": "Meta",
         "Venue": "ASPLOS",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Carbon Neutrality Approaches for IoT-Enabled Applications",
         "Target Problem": "Optimization, Review ",
         "Computer system stack ": "Microarchitecture, Application",
-        "Datacenter stack": "Infrastructure, Application",
+        "Datacenter stack": "N/A",
         "Hardware system": "Tiny",
         "Included carbon life cycle stage": "End-of-life, Manufacturing, Operation",
         "Link": "https://ieeexplore.ieee.org/document/10073921",
         "School/Insititution": "IIIKT",
         "Venue": "ICAIS",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Carbon-Aware Memory Placement",
@@ -93,7 +100,8 @@
         "Link": "https://dl.acm.org/doi/abs/10.1145/3604930.3605714",
         "School/Insititution": "UPotsdam",
         "Venue": "Hotcarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "carbond: An Operating-System Daemon for Carbon Awareness",
@@ -105,55 +113,60 @@
         "Link": "https://dl.acm.org/doi/abs/10.1145/3604930.3605707",
         "School/Insititution": "SIC",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Carbon-Efficient Design Optimization for Computing Systems",
         "Target Problem": "Optimization",
         "Computer system stack ": "Microarchitecture",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Infrastructure, Application",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://hotcarbon.org/2023/pdf/a16-elgamal.pdf",
         "School/Insititution": "Harvard",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Carbon-Efficient Neural Architecture Search",
         "Target Problem": "Optimization",
-        "Computer system stack ": "Application, Infrastructure",
-        "Datacenter stack": "N/A",
+        "Computer system stack ": "Application",
+        "Datacenter stack": "Infrastructure, Application",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://hotcarbon.org/2023/pdf/a12-zhao.pdf",
         "School/Insititution": "WPI",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Design space exploration and optimization for carbon-efficient extended reality systems",
         "Target Problem": "Modeling, Standardization",
         "Computer system stack ": "Microarchitecture, Circuit, Device&Tech",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://Arxiv.org/abs/2305.01831",
         "School/Insititution": "Harvard ",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "EnergAt: Fine-Grained Energy Attribution for Multi-Tenancy",
         "Target Problem": "Modeling, Optimization",
         "Computer system stack ": "Microarchitecture, Application, OS",
-        "Datacenter stack": "Platform",
+        "Datacenter stack": "Application, Platform",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://Arxiv.org/abs/2307.05647",
         "School/Insititution": "ETH",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "GreenScale: Carbon-Aware Systems for Edge Computing",
@@ -165,19 +178,21 @@
         "Link": "https://Arxiv.org/pdf/2304.00404.pdf",
         "School/Insititution": "KU",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "How to estimate carbon footprint when training deep learning models? A guide and review",
         "Target Problem": "Review ",
         "Computer system stack ": "Microarchitecture, Application",
-        "Datacenter stack": "Infrastructure, Appliaction",
+        "Datacenter stack": "Infrastructure, Appliaction, Platform",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://iopscience.iop.org/article/10.1088/2515-7620/acf81b/pdf",
         "School/Insititution": "Cité U",
         "Venue": "ERC",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Is TinyML Sustainable?Assessing the Environmental Impacts of Machine Learning on Microcontrollers",
@@ -189,7 +204,8 @@
         "Link": "https://Arxiv.org/pdf/2301.11899.pdf",
         "School/Insititution": "Harvard",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": "https://github.com/harvard-edge/TinyML-Footprint"
     },
     {
         "Title": "Less Carbon Footprint in Edge Computing by Joint Task Offloading and Energy Sharing",
@@ -201,55 +217,60 @@
         "Link": "https://ieeexplore.ieee.org/abstract/document/10154013",
         "School/Insititution": "UUMS",
         "Venue": "IEEE Networking Letters",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Lightweight energy-efficient offloading framework for mobile edge/cloud computing",
         "Target Problem": "Optimization",
-        "Computer system stack ": "Application, Infrastructure",
+        "Computer system stack ": "Application",
         "Datacenter stack": "Infrastructure,Platform, Appliaction",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://ieeexplore.ieee.org/abstract/document/10035628",
         "School/Insititution": "NU",
         "Venue": "IMCOM",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "On the Promise and Pitfalls of Optimizing Embodied Carbon",
         "Target Problem": "Optimization",
         "Computer system stack ": "Circuit, Microarchitecture, Application",
-        "Datacenter stack": "Infrastructure",
+        "Datacenter stack": "Infrastructure, Appliaction, Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "Manufacturing",
         "Link": "https://dl.acm.org/doi/abs/10.1145/3604930.3605710",
         "School/Insititution": "UMASS",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Peeling Back the Carbon Curtain: Carbon Optimization Challenges in Cloud Computing",
         "Target Problem": "Modeling, Optimization",
-        "Computer system stack ": "Infrastructure",
+        "Computer system stack ": "Appliaction",
         "Datacenter stack": "Infrastructure, Appliaction",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://hotcarbon.org/2023/pdf/a8-wang.pdf",
         "School/Insititution": "CMU",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Reducing the Carbon Impact of Generative AI Inference (today and in 2035)",
         "Target Problem": "Review ",
         "Computer system stack ": "Application",
-        "Datacenter stack": "Infrastructure",
+        "Datacenter stack": "Infrastructure, Appliaction",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://hotcarbon.org/2023/pdf/a11-chien.pdf",
         "School/Insititution": "UChicago",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Sustainability of Machine Learning Models: An Energy Consumption Centric Evaluation",
@@ -261,31 +282,34 @@
         "Link": "https://ieeexplore.ieee.org/document/10101532",
         "School/Insititution": "LBU",
         "Venue": "ECEE",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Sustainable HPC: Modeling, Characterization, and Implications of Carbon Footprint in Modern HPC Systems",
         "Target Problem": "Modeling",
         "Computer system stack ": "Microarchitecture, Application,",
-        "Datacenter stack": "Application, Infrastructure",
+        "Datacenter stack": "Application, Platform, Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://Arxiv.org/abs/2306.13177",
         "School/Insititution": "Northeastern University",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Toward a Life Cycle Assessment for the Carbon Footprint of Data",
         "Target Problem": "Modeling, Standardization",
         "Computer system stack ": "Application",
-        "Datacenter stack": "Application, Infrastructure",
+        "Datacenter stack": "Application, Platform, Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "End-of-life, Manufacturing, Operation",
         "Link": "https://hotcarbon.org/2023/pdf/a14-mersy.pdf",
         "School/Insititution": "UChicago",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Towards a Methodology and Framework for AI Sustainability Metrics",
@@ -297,7 +321,8 @@
         "Link": "https://hotcarbon.org/2023/pdf/a13-eilam.pdf",
         "School/Insititution": "IBM",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Towards Application Centric Carbon Emission Management",
@@ -309,7 +334,8 @@
         "Link": "https://dl.acm.org/doi/abs/10.1145/3604930.3605725",
         "School/Insititution": "RU",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Towards Carbon Footprint Management in Hybrid Multicloud",
@@ -321,7 +347,8 @@
         "Link": "https://hotcarbon.org/2023/pdf/a9-arora.pdf",
         "School/Insititution": "IBM",
         "Venue": "HotCarbon",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "Towards Sustainable Computing: Accessing the Cabon Footprint of Heterogeneous Systems",
@@ -333,67 +360,73 @@
         "Link": "https://Arxiv.org/abs/2306.09434",
         "School/Insititution": "ASU",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "When the Metaverse Meets Carbon Neutrality: Ongoing Efforts and Directions",
         "Target Problem": "Modeling, Optimization",
-        "Computer system stack ": "Microarchitecture, Application, Infrastructure",
-        "Datacenter stack": " Application, Infrastructure",
+        "Computer system stack ": "Microarchitecture, Application",
+        "Datacenter stack": " Application, Platform",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://Arxiv.org/pdf/2301.10235.pdf",
         "School/Insititution": "HUST",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "XGen-7B Technical Report",
         "Target Problem": "Modeling",
         "Computer system stack ": "Microarchitecture, Circuit",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://Arxiv.org/pdf/2309.03450.pdf",
         "School/Insititution": "SFR",
         "Venue": "Arxiv",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     },
     {
         "Title": "ACT: Designing sustainable computer systems with an architectural carbon modeling tool",
         "Target Problem": "Modeling, Standardization",
         "Computer system stack ": "Microarchitecture, Circuit, Device&Tech",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "Manufacturing",
         "Link": "https://ieeexplore.ieee.org/document/10122998",
         "School/Insititution": "Harvard",
         "Venue": "ISCA",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": "https://github.com/facebookresearch/ACT"
     },
     {
         "Title": "Beyond PUE: Flexible Datacenters Empowering the Cloud to Decarbonize",
         "Target Problem": "Standardization",
-        "Computer system stack ": "Infrastructure",
+        "Computer system stack ": "N/A",
         "Datacenter stack": "Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://hotcarbon.org/2022/pdf/hotcarbon22-chien.pdf",
         "School/Insititution": "UChicago",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Capping carbon emission from green data centers",
         "Target Problem": "Modeling, Standardization",
-        "Computer system stack ": "Microarchitecture, Application, Infrastructure",
-        "Datacenter stack": "Application, Infrastructure",
+        "Computer system stack ": "Microarchitecture, Application",
+        "Datacenter stack": "Application, Platform,Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://link.springer.com/article/10.1007/s40095-022-00539-9",
         "School/Insititution": "UAuburn",
         "Venue": "IJEEE",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Carbon Dependencies in Datacenter Design and Management",
@@ -405,7 +438,8 @@
         "Link": "https://hotcarbon.org/2022/pdf/hotcarbon22-acun.pdf",
         "School/Insititution": "Meta",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Carbon Footprint of Selecting and Training Deep Learning Models for Medical Image Analysis",
@@ -417,7 +451,8 @@
         "Link": "https://Arxiv.org/pdf/2203.02202.pdf",
         "School/Insititution": "UCPH",
         "Venue": "MICCAI",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Carbon-Neutralized Task Scheduling for Green Computing Networks",
@@ -429,7 +464,8 @@
         "Link": "https://Arxiv.org/abs/2209.02198",
         "School/Insititution": "MediaTek ",
         "Venue": "GLOBECOM",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Chasing Carbon: The Elusive Environmental Footprint of Computing",
@@ -441,7 +477,8 @@
         "Link": "https://Arxiv.org/pdf/2011.02839.pdf",
         "School/Insititution": "Harvard ",
         "Venue": "HPCA",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Eco2AI: carbon emissions tracking of machine learning models as the first step towards sustainable AI",
@@ -453,19 +490,21 @@
         "Link": "https://arxiv.org/abs/2208.00406",
         "School/Insititution": "AIRI",
         "Venue": "Arxiv",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "ESSENCE: Exploiting Structured Stochastic Gradient Pruning for Endurance-Aware ReRAM-Based In-Memory Training Systems",
         "Target Problem": "Optimization",
         "Computer system stack ": "Device&Tech",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://ieeexplore.ieee.org/document/9926186",
         "School/Insititution": "Duke",
         "Venue": "TCADICS ",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Life cycle assessment of emerging technologies on value recovery from hard disk drives.",
@@ -477,7 +516,8 @@
         "Link": "https://www.sciencedirect.com/science/article/pii/S0921344920301026",
         "School/Insititution": "UA",
         "Venue": "RCR",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Measuring the Carbon Intensity of AI in Cloud Instances",
@@ -489,7 +529,8 @@
         "Link": "https://dl.acm.org/doi/pdf/10.1145/3531146.3533234",
         "School/Insititution": "AI2",
         "Venue": "FACCT",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Metrics for Sustainability in Data Centers",
@@ -501,7 +542,8 @@
         "Link": "https://hotcarbon.org/2022/pdf/hotcarbon22-gandhi.pdf",
         "School/Insititution": "SBU",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Multiple smaller base stations are greener than a single powerful one: Densification of Wireless Cellular Networks",
@@ -513,7 +555,8 @@
         "Link": "https://hotcarbon.org/2022/pdf/hotcarbon22-gupta.pdf",
         "School/Insititution": "UCSD",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Recent advances in energy management for Green-IoT: An up-to-date and comprehensive survey",
@@ -525,7 +568,8 @@
         "Link": "https://www.sciencedirect.com/science/article/pii/S1084804521002551",
         "School/Insititution": "USorbonne",
         "Venue": "JNCA",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Shifting from Cloud Computing to Green Cloud and Edge Computing",
@@ -537,7 +581,8 @@
         "Link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4387781",
         "School/Insititution": "NHU",
         "Venue": "ICICC",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Sustainable AI Processing at the Edge",
@@ -549,19 +594,21 @@
         "Link": "https://Arxiv.org/pdf/2207.01209.pdf",
         "School/Insititution": "PITT",
         "Venue": "Micro",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Sustainable AI: Environmental Implications, Challenges and Opportunities",
         "Target Problem": "Modeling, Optimization",
         "Computer system stack ": "Microarchitecture, Application",
-        "Datacenter stack": "Application, Infrastructure",
+        "Datacenter stack": "Application, Platform, Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf",
         "School/Insititution": "Meta ",
         "Venue": "MLSys",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "The Dirty Secret of SSDs: Embodied Carbon",
@@ -573,7 +620,8 @@
         "Link": "https://Arxiv.org/abs/2207.10793",
         "School/Insititution": "UWM",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Toward Carbon-Aware Networking",
@@ -585,7 +633,8 @@
         "Link": "https://hotcarbon.org/2022/pdf/hotcarbon22-zilberman.pdf",
         "School/Insititution": "Ox",
         "Venue": "HotCarbon",
-        "Year": "2022"
+        "Year": "2022",
+        "Source": ""
     },
     {
         "Title": "Assessing the embodied carbon footprint of IoT edge Device&Techs with a bottom-up life-cycle approach",
@@ -597,7 +646,8 @@
         "Link": "https://Arxiv.org/abs/2105.02082",
         "School/Insititution": "UCLouvain",
         "Venue": "JCP",
-        "Year": "2021"
+        "Year": "2021",
+        "Source": ""
     },
     {
         "Title": "Carbon Emissions and Large Neural Network Training",
@@ -609,7 +659,8 @@
         "Link": "https://Arxiv.org/pdf/2104.10350",
         "School/Insititution": "UCB",
         "Venue": "Arxiv",
-        "Year": "2021"
+        "Year": "2021",
+        "Source": ""
     },
     {
         "Title": "Carbon-Aware Computing for Datacenters",
@@ -621,7 +672,8 @@
         "Link": "https://ieeexplore.ieee.org/document/9770383?denied=",
         "School/Insititution": "Google",
         "Venue": "TPS",
-        "Year": "2021"
+        "Year": "2021",
+        "Source": ""
     },
     {
         "Title": "Towards a systematic survey for carbon neutral data centers.",
@@ -633,43 +685,47 @@
         "Link": "https://Arxiv.org/abs/2110.09284",
         "School/Insititution": "NTU",
         "Venue": "Arxiv",
-        "Year": "2021"
+        "Year": "2021",
+        "Source": ""
     },
     {
         "Title": "Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Learning Models",
         "Target Problem": "Modeling",
         "Computer system stack ": "Application",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Application, Infrastructure",
         "Hardware system": "Datacenter, Edge",
         "Included carbon life cycle stage": "Manufacturing, Operation, Transport",
         "Link": "https://Arxiv.org/abs/2007.03051",
         "School/Insititution": "UCPH",
         "Venue": "Arxiv",
-        "Year": "2020"
+        "Year": "2020",
+        "Source": "https://github.com/lfwa/carbontracker"
     },
     {
         "Title": "ReTransformer: ReRAM-based Processing-in-Memory Architecture for Transformer Acceleration",
         "Target Problem": "Optimization",
         "Computer system stack ": "Device&Tech",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Application, Platform",
         "Hardware system": "Datacenter, Edge, Mobile",
         "Included carbon life cycle stage": "Operation",
         "Link": "https://ieeexplore.ieee.org/document/9256523",
         "School/Insititution": "Duke ",
         "Venue": "ICCAD",
-        "Year": "2020"
+        "Year": "2020",
+        "Source": ""
     },
     {
         "Title": "The global energy footprint of information and communication technology electronics in connected Internet-of-Things Device&Techs",
         "Target Problem": "Modeling",
         "Computer system stack ": "Application",
-        "Datacenter stack": "Infrastructure, Appliaction",
+        "Datacenter stack": "N/A",
         "Hardware system": "Tiny",
         "Included carbon life cycle stage": "Manufacturing, Operation",
         "Link": "sciencedirect.com/science/article/pii/S2352467720303398#sec4",
         "School/Insititution": "ORNL",
         "Venue": "SEGN",
-        "Year": "2020"
+        "Year": "2020",
+        "Source": ""
     },
     {
         "Title": "Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning",
@@ -681,19 +737,21 @@
         "Link": "https://arxiv.org/abs/2002.05651",
         "School/Insititution": "Stanford",
         "Venue": "JMLR",
-        "Year": "2020"
+        "Year": "2020",
+        "Source": ""
     },
     {
         "Title": "GreenChip: A tool for evaluating holistic sustainability of modern computing systems",
         "Target Problem": "Modeling, Optimization",
         "Computer system stack ": "Microarchitecture",
-        "Datacenter stack": "N/A",
+        "Datacenter stack": "Platform",
         "Hardware system": "Datacenter, Edge, Mobile, Tiny",
         "Included carbon life cycle stage": "End-of-life, Manufacturing, Operation",
         "Link": "https://www.sciencedirect.com/science/article/pii/S2210537917300823",
         "School/Insititution": "Upitt",
         "Venue": "SCIS",
-        "Year": "2019"
+        "Year": "2019",
+        "Source": ""
     },
     {
         "Title": "PUE or GPUE: A Carbon-Aware Metric for Data Centers",
@@ -705,7 +763,8 @@
         "Link": "https://ieeexplore.ieee.org/document/8701895",
         "School/Insititution": "KAIST",
         "Venue": "ICACT",
-        "Year": "2019"
+        "Year": "2019",
+        "Source": ""
     },
     {
         "Title": "Data-Centric Green Artificial Intelligence: A Survey",
@@ -717,6 +776,7 @@
         "Link": "https://arxiv.org/abs/2303.10158",
         "School/Insititution": "",
         "Venue": "Rice",
-        "Year": "2023"
+        "Year": "2023",
+        "Source": ""
     }
 ]

@@ -1,45 +1,5 @@
 [
     {
-        "Description": "MCU LCA",
-        "status": "website",
-        "Included carbon life cycle stage": "Operation, Manufacturing",
-        "Hardware system": "Tiny",
-        "Computer system stack ": "Microarchitecture, Circuit",
-        "Datacenter stack": "N/A",
-        "Link": "https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html",
-        "Descriptions": "A website where you can find LCA reports for some specific MCU products."
-    },
-    {
-        "Description": "Carbon Intensity API",
-        "status": "website",
-        "Included carbon life cycle stage": "Operation, Manufacturing",
-        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
-        "Computer system stack ": "Application, Circuit",
-        "Datacenter stack": "Infrastructure",
-        "Link": "https://carbonintensity.org.uk/",
-        "Descriptions": "The Carbon Intensity API uses state-of-the-art Machine Learning and sophisticated power system modelling to forecast the carbon intensity and generation mix 96+ hours ahead for each region in Great Britain."
-    },
-    {
-        "Description": "Environmental Footprint Data",
-        "status": "repository",
-        "Included carbon life cycle stage": "Operation, Manufacturing",
-        "Hardware system": "Datacenter, Mobile, Edge",
-        "Computer system stack ": "Microarchitecture, Circuit",
-        "Datacenter stack": "Platform",
-        "Link": "https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv",
-        "Descriptions": "Examples include life cycle assessments of many devices such as servers, notebooks, and IoT from many companies such as Apple, Dell, and HP."
-    },
-    {
-        "Description": "Carbon intensity",
-        "status": "website",
-        "Included carbon life cycle stage": "Operation, Manufacturing",
-        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
-        "Computer system stack ": "Application, Circuit",
-        "Datacenter stack": "Infrastructure",
-        "Link": "https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95",
-        "Descriptions": "A dataset collection published in 2022 describes the carbon intensity of electricity generation for different countries."
-    },
-    {
         "Description": "DTCO including Sustainability",
         "status": "paper",
         "Included carbon life cycle stage": "Manufacturing",
@@ -65,9 +25,39 @@
         "Included carbon life cycle stage": "Operation",
         "Hardware system": "Datacenter, Edge",
         "Computer system stack ": "OS",
-        "Datacenter stack": "Platform",
+        "Datacenter stack": "Platform, Application",
         "Link": "https://github.com/hubblo-org/windows-rapl-driver",
         "Descriptions": "RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system."
+    },
+    {
+        "Description": "pynvml<a name='pynvml'></a>",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer system stack ": "Application",
+        "Datacenter stack": "Platform, Application",
+        "Link": "https://pypi.org/project/pynvml/",
+        "Descriptions": "Provides a Python interface to GPU management and monitoring functions."
+    },
+    {
+        "Description": "Carbon Intensity API",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://carbonintensity.org.uk/",
+        "Descriptions": "The Carbon Intensity API uses state-of-the-art Machine Learning and sophisticated power system modelling to forecast the carbon intensity and generation mix 96+ hours ahead for each region in Great Britain."
+    },
+    {
+        "Description": "Carbon intensity",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation, Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge,Tiny",
+        "Computer system stack ": "Application, Circuit",
+        "Datacenter stack": "Infrastructure",
+        "Link": "https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95",
+        "Descriptions": "A dataset collection published in 2022 describes the carbon intensity of electricity generation for different countries."
     },
     {
         "Description": "ENERGI DATA SERVICE",
@@ -90,13 +80,23 @@
         "Descriptions": "It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries."
     },
     {
-        "Description": "pynvml<a name='pynvml'></a>",
+        "Description": "MCU LCA",
         "status": "website",
-        "Included carbon life cycle stage": "Operation",
+        "Included carbon life cycle stage": "Operation, Manufacturing, End-of-life",
+        "Hardware system": "Tiny",
+        "Computer system stack ": "Microarchitecture, Circuit",
+        "Datacenter stack": "N/A",
+        "Link": "https://www.st.com/content/st_com/en/about/sustainability/sustainable-technology.html",
+        "Descriptions": "A website where you can find LCA reports for some specific MCU products."
+    },
+    {
+        "Description": "LCA repository",
+        "status": "repository",
+        "Included carbon life cycle stage": "Operation, Manufacturing,End-of-life",
         "Hardware system": "Datacenter, Mobile, Edge",
-        "Computer system stack ": "OS",
+        "Computer system stack ": "Microarchitecture, Circuit",
         "Datacenter stack": "Platform",
-        "Link": "https://pypi.org/project/pynvml/",
-        "Descriptions": "Provides a Python interface to GPU management and monitoring functions."
+        "Link": "https://github.com/Boavizta/environmental-footprint-data/blob/main/boavizta-data-us.csv",
+        "Descriptions": "Examples include life cycle assessments of many devices such as servers, notebooks, and IoT from many companies such as Apple, Dell, and HP."
     }
 ]

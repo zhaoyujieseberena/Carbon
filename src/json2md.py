@@ -63,8 +63,8 @@ def load_report(file):
             file.write("\n")
             file.write("#### Application scope of parameters sources\n")
 
-            file.write("| Title |  Carbon life cycle stage | Computer system stack | Hardware system | \n")
-            file.write("| :--- | :---- | :------| :------ |  \n")
+            file.write("| Title |  Carbon life cycle stage | Computer system stack |  Hardware system | Datacenter stack |\n")
+            file.write("| :--- | :---- | :------| :------ | :-----| \n")
             j=0
 
 
@@ -73,11 +73,11 @@ def load_report(file):
                 
                 file.write("|{}".format(metric['Description']))
                 
-                
+                choose(file,metric['Included carbon life cycle stage'])
                 choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
+                choose(file,metric['Datacenter stack'])
                 
-                choose(file,metric['Included carbon life cycle stage'])
                
                 file.write("|\n")
             file.write("\n")
@@ -138,8 +138,8 @@ def load_Link(file):
             file.write("\n")
 
             file.write("#### Tools application usage\n")
-            file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | \n")
-            file.write("| :---: | :--- | :---- | :------ | :----- | :-------- | \n")
+            file.write("| ID | Name  | Target problem | Carbon life cycle stage | Computer system stack |  Hardware system | Datacenter stack | \n")
+            file.write("| :---: | :--- | :---- | :------ | :----- | :-------- |:-------- | \n")
             j=0
 
             for metric in table:
@@ -147,18 +147,19 @@ def load_Link(file):
                 file.write("|[{}](#Link{})".format(j,j))
                 file.write("|{}".format(metric['Name']))
                 choose(file,metric['Target Problem'])
-                
+                choose(file,metric['Included carbon life cycle stage'])
                 choose(file,metric['Computer system stack '])
                 choose(file,metric['Hardware system'])
                 
-                choose(file,metric['Included carbon life cycle stage'])
+               
+                choose(file,metric['Datacenter stack'])
                 file.write("|\n")
             file.write("\n")
 
 
             
             file.write("#### Tools metrics usage\n")
-            file.write("|ID| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| \n")
+            file.write("|ID| Tools| PUE | CUE | GPUE | CDP/<br>CEP | tCDP/<br>tCEP| JSC | ASC | CCI | SCI |   \n")
             file.write("|:-:| :- | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n")
             
             j=0
@@ -171,12 +172,13 @@ def load_Link(file):
                     define(file,paper['PUE'])
                     define(file,paper['CUE'])
                     define(file,paper['GPUE'])
-                    define(file,paper['CCI'])
-                    define(file,paper['SCI'])
-                    define(file,paper['ASC'])
-                    define(file,paper['JSC'])
                     define(file,paper['CDP/CEP'])
                     define(file,paper['tCDP/tCEP'])
+                    define(file,paper['JSC'])
+                    define(file,paper['ASC'])
+                    
+                    define(file,paper['CCI'])
+                    define(file,paper['SCI'])
                   
                     
                     
@@ -271,7 +273,9 @@ def load_paper(file):
                     file.write("|{} <br>{}|".format(paper['Venue'],(paper['Year'])))
                     file.write("{}|".format(paper['Title']))
                     file.write("{}|".format(paper['School/Insititution']))
+                    if (paper['Source']): file.write(" [[code]]({})<br>".format(paper['Source']))
                     file.write(" [[paper]]({})".format(paper['Link']))
+                   
                     cite = citation[paper['Title']]['citation']
                     file.write("![Scholar citations](https://img.shields.io/badge/Citations-{}-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)".format(cite))
                     file.write("|")
@@ -281,7 +285,7 @@ def load_paper(file):
             file.write("#### Papers application scope\n")
 
             
-            file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")
+            file.write("| Link | Target problem | Carbon life cycle stage | Computer system stack |  Hardware system | Datacenter stack |   \n")
             file.write("| :---: | :---- | :------ | :------ | :-------- |:-------- | \n")
             j=0
 
@@ -292,8 +296,9 @@ def load_paper(file):
                 file.write("|[{}](#paper{})".format(j,j))
                 choose(file,metric['Target Problem'])
                 choose(file,metric['Included carbon life cycle stage'])
-                choose(file,metric['Hardware system'])
+                
                 choose(file,metric['Computer system stack '])
+                choose(file,metric['Hardware system'])
                 choose(file,metric['Datacenter stack'])
                 
                 
@@ -460,7 +465,7 @@ def load_metrics(file):
     with open(path, 'r') as f:
             table = json.load(f)
             file.write("\n")
-            file.write("### Metrics overview\n")
+            file.write("#### Metrics overview\n")
             
             file.write("| Metric | Equation | Details | \n")
             file.write(" | :--------| :------ | :------ |\n")
@@ -475,7 +480,7 @@ def load_metrics(file):
                     file.write("|")
                     file.write("\n")
             file.write("\n")
-            file.write("### Metrics application usage\n")
+            file.write("#### Metrics application usage\n")
             file.write("|      Metric   | Link | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |  \n")
             file.write("| :--------- | :------| :------ | :------ | :-------- | :-------- | \n")
             for metric in table:

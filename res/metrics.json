@@ -36,11 +36,59 @@
         "Details": "**GPUE** describes the same metrics as CUE. What’s more, it considers that carbon intensity is composed of energy from different sources with a certain weight."
     },
     {
+        "Metric": "JSC",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
+        "Datacenter stack": "Platform",
+        "Computer_stack": "OS",
+        "Description": "**JSC**<br>Job Sustainability Costs ",
+        "Link": "https://par.nsf.gov/servlets/purl/10353075",
+        "Papertitle": "Metrics for Sustainability in Data Centers",
+        "Equation": "$(Energy_{app}+tax_{app}) \\cdot CI $<br>unit: $kg$",
+        "Details": "**ASC** represents the operational CO2e emissions during the execution of an application. It comprises both its inherent consumption and the job's share (or tax) of embodied and other costs. For example, a machine learning model derived from a base model needs to account for adding a portion of the original model's tax."
+    },
+    {
+        "Metric": "ASC",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
+        "Datacenter stack": "Application",
+        "Computer_stack": "Application",
+        "Description": "**ASC**<br>Application Sustainability Costs",
+        "Link": "https://par.nsf.gov/servlets/purl/10353075",
+        "Papertitle": "Metrics for Sustainability in Data Centers",
+        "Equation": "$Energy_{job} \\cdot CI  $<br>unit: $kg$",
+        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model. It can describe carbon consumption at a finer granularity, such as at the thread level."
+    },
+    {
+        "Metric": "CDP/CEP",
+        "Included carbon life cycle stage": "Operation,  Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
+        "Datacenter stack": "Platform",
+        "Computer_stack": "Microarchitecture",
+        "Description": "**CDP/CEP** Product of Carbon Delay/Energy ",
+        "Link": "https://ieeexplore.ieee.org/document/10122998",
+        "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
+        "Equation": "$CO_{2\\, emb} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, emb} \\cdot Energy_{op}$<br>unit: $kg\\cdot J$",
+        "Details": "**CDP** is the product of embodied carbon and delay for a device. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
+    },
+    {
+        "Metric": "tCDP/tCEP",
+        "Included carbon life cycle stage": "Operation,  Manufacturing",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
+        "Datacenter stack": "Platform",
+        "Computer_stack": "Microarchitecture",
+        "Description": "**tCDP/tCEP** <br> Product of total CO2 and total application execution time",
+        "Link": "https://arxiv.org/abs/2305.01831",
+        "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
+        "Equation": "$CO_{2\\, app} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>where $CO_{2\\,app}=$<br> $CO_{2\\, op}+\\frac{time_{app}}{HW_{life time}}\\cdot CO_{2\\, emb}$",
+        "Details": "**tCDP**  is the product of carbon within a specified time period, and delay for an application on a device. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
+    },
+    {
         "Metric": "CCI",
         "Included carbon life cycle stage": "Operation,  Manufacturing, End-of-life",
-        "Hardware system": "Datacenter",
+        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
         "Datacenter stack": "Platform",
-        "Computer_stack": "N/A",
+        "Computer_stack": "Microarchitecture",
         "Description": "**CCI**<br>Computational Carbon Intensity",
         "Link": "https://arxiv.org/abs/2110.06870",
         "Papertitle": "Junkyard computing: repurposing discarded smartphones to minimize carbon",
@@ -58,53 +106,5 @@
         "Papertitle": "Software Carbon Intensity Standard. Version 1.0.0. (Nov. 1, 2021).",
         "Equation": "$\\frac{CO_{2\\, app}}{OPs_{app}} $<br>unit: $kg$",
         "Details": "**SCI** describes the average carbon footprint per operation for an application. It can describe carbon consumption at a finer granularity than CCI."
-    },
-    {
-        "Metric": "ASC",
-        "Included carbon life cycle stage": "Operation",
-        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
-        "Datacenter stack": "Application",
-        "Computer_stack": "Application",
-        "Description": "**ASC**<br>Application Sustainability Costs",
-        "Link": "https://par.nsf.gov/servlets/purl/10353075",
-        "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$Energy_{job} \\cdot CI  $<br>unit: $kg$",
-        "Details": "**JSC** is the operational CO2 spent while running a job. A \"job\" can vary in scale from a network packet to a massive DNN model. It can describe carbon consumption at a finer granularity, such as at the thread level."
-    },
-    {
-        "Metric": "JSC",
-        "Included carbon life cycle stage": "Operation",
-        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
-        "Datacenter stack": "Application",
-        "Computer_stack": "OS",
-        "Description": "**JSC**<br>Job Sustainability Costs ",
-        "Link": "https://par.nsf.gov/servlets/purl/10353075",
-        "Papertitle": "Metrics for Sustainability in Data Centers",
-        "Equation": "$(Energy_{app}+tax_{app}) \\cdot CI $<br>unit: $kg$",
-        "Details": "**ASC** represents the operational CO2e emissions during the execution of an application. It comprises both its inherent consumption and the job's share (or tax) of embodied and other costs. For example, a machine learning model derived from a base model needs to account for adding a portion of the original model's tax."
-    },
-    {
-        "Metric": "CDP/CEP",
-        "Included carbon life cycle stage": "Operation,  Manufacturing",
-        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
-        "Datacenter stack": "Application",
-        "Computer_stack": "Microarchitecture",
-        "Description": "**CDP/CEP** Product of Carbon Delay/Energy ",
-        "Link": "https://ieeexplore.ieee.org/document/10122998",
-        "Papertitle": "ACT: Designing Sustainable Computer Systems With An Architectural Carbon Modeling Tool",
-        "Equation": "$CO_{2\\, emb} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, emb} \\cdot Energy_{op}$<br>unit: $kg\\cdot J$",
-        "Details": "**CDP** is the product of embodied carbon and delay for a device. It balances embodied carbon emissions and performance. <br>**CEP** is the product of embodied carbon and energy. It balances embodied carbon emissions and energy consumption for chips. <br> They can serve as optimization targets."
-    },
-    {
-        "Metric": "tCDP/tCEP",
-        "Included carbon life cycle stage": "Operation,  Manufacturing",
-        "Hardware system": "Datacenter, Mobile, Edge, Tiny",
-        "Datacenter stack": "Application",
-        "Computer_stack": "Microarchitecture",
-        "Description": "**tCDP/tCEP** <br> Product of total CO2 and total application execution time",
-        "Link": "https://arxiv.org/abs/2305.01831",
-        "Papertitle": "Design Space Exploration and Optimization for Carbon-Efficient Extended Reality Systems",
-        "Equation": "$CO_{2\\, app} \\cdot Delay$ <br>unit: $kg\\cdot s$<br> $CO_{2\\, app}\\cdot Energy_{op}$<br>unit: $kg\\cdot s$<br>where $CO_{2\\,app}=$<br> $CO_{2\\, op}+\\frac{time_{app}}{HW_{life time}}\\cdot CO_{2\\, emb}$",
-        "Details": "**tCDP**  is the product of carbon within a specified time period, and delay for an application on a device. The carbon includes both the operations conducted during this time and the amortized embodied carbon. <br> **tCEP** is the product of carbon within a specified time period, t and delay   <br> They can serve as an optimization target. <br> They can provide a more comprehensive calculation of carbon. "
     }
 ]
