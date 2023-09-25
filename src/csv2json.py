@@ -2,7 +2,7 @@
 import csv
 import json
 
-def run():
+def run_csv():
     csv_file = './res/papers.csv'  # 替换为您的CSV文件路径
     json_file = './res/papers.json'  # 替换为您想要生成的JSON文件路径
 

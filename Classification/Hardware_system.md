@@ -50,6 +50,7 @@
 |JMLR <br>2020|Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning|Stanford| [[paper]](https://arxiv.org/abs/2002.05651)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |SCIS <br>2019|GreenChip: A tool for evaluating holistic sustainability of modern computing systems|Upitt| [[paper]](https://www.sciencedirect.com/science/article/pii/S2210537917300823)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |ICACT <br>2019|PUE or GPUE: A Carbon-Aware Metric for Data Centers|KAIST| [[paper]](https://ieeexplore.ieee.org/document/8701895)![Scholar citations](https://img.shields.io/badge/Citations-4-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Rice <br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Edge
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 

@@ -1,9 +1,13 @@
 # %%
 import json
 import os
-from csv2json import run
+from csv2json import run_csv
+from classification import run_classification
+from rebuild_citation import rebuild_citation
 
-run()
+run_csv()
+run_classification()
+rebuild_citation()
 
 def load_head(file):
     with open("./res/head.md", 'r') as f:

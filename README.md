@@ -284,4 +284,12 @@ We have listed some relevant literature in the field of sustainable computer sys
 
 ## Contribute
 
-We welcome contributions to [this repository](https://github.com/zhaoyujieseberena/Carbon). To add new papers to this list, please update csv files :`./res/metrics.csv` ,`./res/tools.csv`,`./res/datasets.csv`,`./res/papers.csv`. Our bots will update the paper list in `README.md` automatically. The citations of newly added papers will be updated within one day.
+We welcome contributions to [this repository](https://github.com/zhaoyujieseberena/Carbon). 
+
+**To Add New Content:**
+
+1. Please update the following CSV files: `./res/metrics.csv`, `./res/tools.csv`, `./res/datasets.csv`, `./res/papers.csv`.
+2. Run `src/json2md.py` to automatically update the Markdown files.
+3. If you need to update citations, please run `src/update_citation.py`.
+
+Then you can just . 

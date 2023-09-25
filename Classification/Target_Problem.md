@@ -10,6 +10,7 @@
 |JNCA <br>2022|Recent advances in energy management for Green-IoT: An up-to-date and comprehensive survey|USorbonne| [[paper]](https://www.sciencedirect.com/science/article/pii/S1084804521002551)![Scholar citations](https://img.shields.io/badge/Citations-42-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon <br>2022|Toward Carbon-Aware Networking|Ox| [[paper]](https://hotcarbon.org/2022/pdf/hotcarbon22-zilberman.pdf)![Scholar citations](https://img.shields.io/badge/Citations-2-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |Arxiv <br>2021|Towards a systematic survey for carbon neutral data centers.|NTU| [[paper]](https://Arxiv.org/abs/2110.09284)![Scholar citations](https://img.shields.io/badge/Citations-21-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Rice <br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Optimization
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 

@@ -17,6 +17,7 @@
 |MLSys <br>2022|Sustainable AI: Environmental Implications, Challenges and Opportunities|Meta | [[paper]](https://proceedings.mlsys.org/paper_files/paper/2022/file/462211f67c7d858f663355eff93b745e-Paper.pdf)![Scholar citations](https://img.shields.io/badge/Citations-128-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |Arxiv <br>2021|Carbon Emissions and Large Neural Network Training|UCB| [[paper]](https://Arxiv.org/pdf/2104.10350)![Scholar citations](https://img.shields.io/badge/Citations-360-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |TPS <br>2021|Carbon-Aware Computing for Datacenters|Google| [[paper]](https://ieeexplore.ieee.org/document/9770383?denied=)![Scholar citations](https://img.shields.io/badge/Citations-69-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Rice <br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Platform
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
@@ -26,6 +27,7 @@
 |IMCOM<br>2023|Lightweight energy-efficient offloading framework for mobile edge/cloud computing|NU| [[paper]](https://ieeexplore.ieee.org/abstract/document/10035628)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |RCR<br>2022|Life cycle assessment of emerging technologies on value recovery from hard disk drives.|UA| [[paper]](https://www.sciencedirect.com/science/article/pii/S0921344920301026)![Scholar citations](https://img.shields.io/badge/Citations-38-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |HotCarbon<br>2022|The Dirty Secret of SSDs: Embodied Carbon|UWM| [[paper]](https://Arxiv.org/abs/2207.10793)![Scholar citations](https://img.shields.io/badge/Citations-9-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Rice<br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
 ### Infrastructure
 | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
@@ -60,3 +62,4 @@
 |SEGN <br>2020|The global energy footprint of information and communication technology electronics in connected Internet-of-Things Device&Techs|ORNL| [[paper]](sciencedirect.com/science/article/pii/S2352467720303398#sec4)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |JMLR <br>2020|Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning|Stanford| [[paper]](https://arxiv.org/abs/2002.05651)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 |ICACT <br>2019|PUE or GPUE: A Carbon-Aware Metric for Data Centers|KAIST| [[paper]](https://ieeexplore.ieee.org/document/8701895)![Scholar citations](https://img.shields.io/badge/Citations-4-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
+|Rice <br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
