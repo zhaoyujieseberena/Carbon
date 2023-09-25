@@ -103,24 +103,24 @@ A list of carbon relevant paper links. If you have any comment, please create an
 #### Estimation of operational carbon
 | Tools| Operational energy | Operational usage | Operational carbon intensity |  
 | :-: | :- |  :- | :- | 
-|Codecarbon| CPU:  [RAPL](#RAPL) file<br> GPU: Use [pynvml](#pynvml) library|CPU: 50%<br> GPU: N/A| Choose the location of manufacturing|
-|GreenAlgorithms| CPU:  $TDP_{core}\cdot N_{core}$ <br> GPU:  $TDP_{per GPU}$|CPU: 100%<br> GPU: 100%| Choose the location or source of operation|
-|Cumulator| CPU: N/A<br> GPU:  $TDP_{per GPU}$ |CPU: N/A<br> GPU: N/A| Choose the location or source of operation|
-|Eco2AI| CPU:  $TDP_{cpu}$<br> GPU:  Use [pynvml](#pynvml) library|CPU: Use OS<br> GPU: N/A| Choose the location of operation|
-|Carbontracker| CPU:  [RAPL](#RAPL) file<br> GPU:  Use [pynvml](#pynvml) library|CPU: [RAPL](#RAPL) files<br> GPU: N/A| Use external [API](#API)s or choose location of operation.|
-|EIT| CPU:  [RAPL](#RAPL) file<br> GPU:  Use [pynvml](#pynvml) library|CPU: Use [psutil](https://pypi.org/project/psutil/) python module<br> GPU: Use [popen](https://man7.org/linux/man-pages/man3/popen.3.html)| Use external [API](#API)s or choose location of operation.|
-|TinyML| CPU: Plugin energy per area to calclate<br> GPU: N/A|CPU: 100%<br> GPU: N/A| Choose the location or source of operation|
-|Greenchip| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation|
-|3D-Carbon| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)/ Calculate by chips'  parameters<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation|
-|ACT| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation|
+|Codecarbon| CPU:  [RAPL](#RAPL) file<br> GPU: Use [pynvml](#pynvml) library|CPU: 50%<br> GPU: N/A| Choose the location of manufacturing.|
+|GreenAlgorithms| CPU:  $TDP_{core}\cdot N_{core}$ <br> GPU:  $TDP_{per GPU}$|CPU: 100%<br> GPU: 100%| Choose the location or source of operation.|
+|Cumulator| CPU: N/A<br> GPU:  $TDP_{per GPU}$ |CPU: N/A<br> GPU: N/A| Choose the location or source of operation.|
+|Eco2AI| CPU:  $TDP_{cpu}$<br> GPU:  Use [pynvml](#pynvml) library|CPU: Use OS<br> GPU: N/A| Choose the location of operation.|
+|Carbontracker| CPU:  [RAPL](#RAPL) file<br> GPU:  Use [pynvml](#pynvml) library|CPU: [RAPL](#RAPL) files<br> GPU: N/A| Use external [API](#API)s or choose the location of operation.|
+|EIT| CPU:  [RAPL](#RAPL) file<br> GPU:  Use [pynvml](#pynvml) library|CPU: Use [psutil](https://pypi.org/project/psutil/) python module<br> GPU: Use [popen](https://man7.org/linux/man-pages/man3/popen.3.html)| Use external [API](#API)s or choose the location of operation.|
+|TinyML| CPU: Plugin energy per area to calclate<br> GPU: N/A|CPU: 100%<br> GPU: N/A| Choose the location or source of operation.|
+|Greenchip| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation.|
+|3D-Carbon| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)/ Calculate by chips'  parameters<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation.|
+|ACT| CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU: Plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose the location or source of operation.|
 
 #### Estimation of embodied carbon
 | Tools | Embodied energy | Embodied carbon intensity | 
 | :-: | :- | :- |
-|TinyML| Plugin LCA| Choose the location or source of manufacturing|
-|Greenchip| Plugin LCA| N/A|
-|3D-Carbon| Calculate based on hardware parameters.| Choose the location or source of manufacturing|
-|ACT| Calculate based on hardware parameters.| Choose the location or source of manufacturing|
+|TinyML| Plugin LCA| Choose the location or source of manufacturing.|
+|Greenchip| Plugin LCA| N/A.|
+|3D-Carbon| Calculate based on hardware parameters.| Choose the location or source of manufacturing.|
+|ACT| Calculate based on hardware parameters.| Choose the location or source of manufacturing.|
 
 ## The parameters sources
 #### A summary of parameters sources
