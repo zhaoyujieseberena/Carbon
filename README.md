@@ -110,9 +110,9 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |Carbontracker| CPU: [RAPL](#RAPL) file<br> GPU: Uses [pynvml](#pynvml) library|CPU:[RAPL](RAPL) files<br> GPU:N/A| Using external APIs or choose location of operation.|
 |EIT| CPU: [RAPL](#RAPL) file<br> GPU: Uses [pynvml](#pynvml) library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
 |TinyML| CPU:plugin EPA<br> GPU:N/A|CPU:100%<br> GPU:N/A| Choose location or source of operation|
-|Greenchip| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
-|3D-Carbon| CPU:plugin McPAT/ Calculate by chips'  parameters<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT/ Calculate by chips‘ parameters| Choose location or source of operation|
-|ACT| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
+|Greenchip| CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose location or source of operation|
+|3D-Carbon| CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)/ Calculate by chips'  parameters<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)/ Calculate by chips‘ parameters| Choose location or source of operation|
+|ACT| CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)|CPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)<br> GPU:plugin [MCPAT](https://github.com/HewlettPackard/mcpat)| Choose location or source of operation|
 
 #### Estimation of embodied carbon
 | Tools | Embodied energy | Embodied carbon intensity | 
