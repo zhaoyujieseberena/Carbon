@@ -171,7 +171,7 @@
         "Datacenter stack": "N/A",
         "Target Problem": "Modeling, Optimization",
         "Paper Link": "https://Arxiv.org/pdf/2301.11899.pdf",
-        "Operation CPU energy": "Plugin rnergy per area to calclate",
+        "Operation CPU energy": "Plugin energy per area to calclate",
         "Operation CPU usage": "100%",
         "Operation GPU energy": "N/A",
         "Operation GPU usage": "N/A",
