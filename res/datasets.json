@@ -40,7 +40,7 @@
         "Descriptions": "Provides a Python interface to GPU management and monitoring functions."
     },
     {
-        "Description": "Carbon Intensity API",
+        "Description": "Carbon Intensity API <a name='API'>",
         "status": "website",
         "Included carbon life cycle stage": "Operation, Manufacturing",
         "Hardware system": "Datacenter, Mobile, Edge,Tiny",
