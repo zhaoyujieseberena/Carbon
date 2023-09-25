@@ -104,7 +104,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 | Tools| Operational energy | Operational usage | Operational carbon intensity |  
 | :-: | :- |  :- | :- | 
 |Codecarbon| CPU:  [RAPL](#RAPL) file<br> GPU: Use [pynvml](#pynvml) library|CPU: 50%<br> GPU: N/A| Choose location of operation|
-|GreenAlgorithms| CPU:  $TDP_{core}\cdot core number$ <br> GPU:  $TDP_{per GPU}$|CPU: 100%<br> GPU: 100%| Choose location or source of operation|
+|GreenAlgorithms| CPU:  $TDP_{core}\cdot N_{core}$ <br> GPU:  $TDP_{per GPU}$|CPU: 100%<br> GPU: 100%| Choose location or source of operation|
 |Cumulator| CPU: N/A<br> GPU:  $TDP_{per GPU}$ |CPU: N/A<br> GPU: N/A| Choose location or time of operation|
 |Eco2AI| CPU:  $TDP_{cpu}$<br> GPU:  Use [pynvml](#pynvml) library|CPU: uses os<br> GPU: N/A| Choose location of operation|
 |Carbontracker| CPU:  [RAPL](#RAPL) file<br> GPU:  Use [pynvml](#pynvml) library|CPU: [RAPL](RAPL) files<br> GPU: N/A| Using external APIs or choose location of operation.|

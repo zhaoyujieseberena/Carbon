@@ -36,7 +36,7 @@
         "Datacenter stack": "Application, Platform",
         "Target Problem": "Modeling",
         "Paper Link": "https://onlinelibrary.wiley.com/doi/10.1002/advs.202100707",
-        "Operation CPU energy": " $TDP_{core}\\cdot core number$ ",
+        "Operation CPU energy": " $TDP_{core}\\cdot N_{core}$ ",
         "Operation CPU usage": "100%",
         "Operation GPU energy": " $TDP_{per GPU}$",
         "Operation GPU usage": "100%",
