@@ -196,8 +196,8 @@ def load_Link(file):
                     j+=1
                     file.write("|{}".format(paper['Name']))
                     
-                    file.write("| CPU: {}<br> GPU:{}".format(paper['Operation CPU energy'],paper['Operation GPU energy']))
-                    file.write("|CPU: {}<br> GPU:{}".format(paper['Operation CPU usage'],paper['Operation GPU usage']))
+                    file.write("| CPU: {}<br> GPU: {}".format(paper['Operation CPU energy'],paper['Operation GPU energy']))
+                    file.write("|CPU: {}<br> GPU: {}".format(paper['Operation CPU usage'],paper['Operation GPU usage']))
                     file.write("| {}".format(paper['Operation intensity']))
                     
                   
