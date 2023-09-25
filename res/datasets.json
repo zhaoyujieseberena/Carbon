@@ -60,7 +60,7 @@
         "Descriptions": "This page describes the amount of carbon dioxide emissions that ReRAM reduces during its life cycle compared to regular MRAM."
     },
     {
-        "Description": "[RAPL](#RAPL)",
+        "Description": "RAPL <a name='RAPL'></a>",
         "status": "website",
         "Included carbon life cycle stage": "Operation",
         "Hardware system": "Datacenter, Edge",
@@ -90,7 +90,7 @@
         "Descriptions": "It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries."
     },
     {
-        "Description": "[pynvml](#pynvml)",
+        "Description": "pynvml<a name='pynvml'></a>",
         "status": "website",
         "Included carbon life cycle stage": "Operation",
         "Hardware system": "Datacenter, Mobile, Edge",

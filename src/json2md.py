@@ -202,7 +202,7 @@ def load_Link(file):
 
             file.write("\n")
 
-            file.write("### Estimation of embodied carbon\n")
+            file.write("#### Estimation of embodied carbon\n")
             file.write("| Tools | Embodied energy | Embodied carbon intensity | \n")
             file.write("| :-: | :- | :- |\n")
             
@@ -254,7 +254,7 @@ def load_paper(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
-            file.write("### Papers overview\n")
+            file.write("#### Papers overview\n")
             file.write("We have listed some relevant literature in the field of sustainable computer systems below.\n")
 
             file.write("| ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | \n")
@@ -274,7 +274,7 @@ def load_paper(file):
                     file.write("\n")
 
             file.write("\n")
-            file.write("### Papers' application scope\n")
+            file.write("#### Papers application scope\n")
 
             
             file.write("| Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   \n")

@@ -13,9 +13,13 @@ A list of carbon relevant paper links. If you have any comment, please create an
 - [Tools](#Tools)
   - [A summary of tools used in modeling and optimization](A-summary-of-tools-used-in-modeling-and-optimization)
   - [Tools metrics usage](#Tools-metrics-usage)
-  - [Embodied carbon modeling method](#Embodied-carbon modeling-method)
+  - [Estimation of operational carbon](#Estimation-of-operational-carbon)
+  - [Estimation of embodied carbon](#Estimation-of-embodied-carbon)
 - [The parameters sources](#The parameters sources)
+  - [A summary of parameters sources](A-summary-of-parameters-sources)
 - [Papers](#Papers)
+  - [Papers overview](Papers-overview)
+  - [Papers application scope](Papers application scope)
 
 ## Legend
 
@@ -99,10 +103,10 @@ A list of carbon relevant paper links. If you have any comment, please create an
 #### Estimation of operational carbon
 | Tools| Operational energy | Operational usage | Operational carbon intensity |  
 | :-: | :- |  :- | :- | 
-|Codecarbon| CPU: [RAPL](RAPL) file<br> GPU:Uses [pynvml](pynvml) library|CPU:50%<br> GPU:N/A| Choose location of operation|
-|Carbontracker| CPU: [RAPL](RAPL) file<br> GPU: Uses [pynvml](pynvml) library|CPU:[RAPL](RAPL) files<br> GPU:N/A| Using external APIs or choose location of operation.|
-|Eco2AI| CPU: $TDP_{cpu}$<br> GPU: Uses [pynvml](pynvml) library|CPU:uses os<br> GPU:N/A| Choose location of operation|
-|EIT| CPU: [RAPL](RAPL) file<br> GPU: Uses [pynvml](pynvml) library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
+|Codecarbon| CPU: [RAPL](#RAPL) file<br> GPU:Uses [pynvml](#pynvml) library|CPU:50%<br> GPU:N/A| Choose location of operation|
+|Carbontracker| CPU: [RAPL](#RAPL) file<br> GPU: Uses [pynvml](#pynvml) library|CPU:[RAPL](RAPL) files<br> GPU:N/A| Using external APIs or choose location of operation.|
+|Eco2AI| CPU: $TDP_{cpu}$<br> GPU: Uses [pynvml](#pynvml) library|CPU:uses os<br> GPU:N/A| Choose location of operation|
+|EIT| CPU: [RAPL](#RAPL) file<br> GPU: Uses [pynvml](#pynvml) library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
 |GreenAlgorithms| CPU: $TDP_{core}\cdot core number$ <br> GPU: $TDP_{per GPU}$|CPU:100%<br> GPU:100%| Choose location or source of operation|
 |Cumulator| CPU:N/A<br> GPU: $TDP_{per GPU}$ |CPU:N/A<br> GPU:N/A| Choose location or time of operation|
 |TinyML| CPU:plugin EPA<br> GPU:N/A|CPU:100%<br> GPU:N/A| Choose location or source of operation|
@@ -110,7 +114,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |ACT| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
 |Greenchip| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
 
-### Estimation of embodied carbon
+#### Estimation of embodied carbon
 | Tools | Embodied energy | Embodied carbon intensity | 
 | :-: | :- | :- |
 |TinyML| Plugin LCA| Choose location of manufacturing.|
@@ -129,10 +133,10 @@ A list of some links that can be used as sources formodeling and calculating par
 |Carbon intensity |[[website]](https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95)|A dataset collection published in 2022 describes the carbon intensity of electricity generation for different countries.|
 |DTCO including Sustainability |[[paper]](https://ieeexplore.ieee.org/document/9372004)|This article describes the energy consumption per unit area of several processes at different technology nodes in the logic IC manufacturing process.|
 |Weebit ReRAM |[[web page]](https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/)|This page describes the amount of carbon dioxide emissions that ReRAM reduces during its life cycle compared to regular MRAM.|
-|[RAPL](#RAPL) |[[website]](https://github.com/hubblo-org/windows-rapl-driver)|RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system.|
+|RAPL <a name='RAPL'></a> |[[website]](https://github.com/hubblo-org/windows-rapl-driver)|RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system.|
 |ENERGI DATA SERVICE |[[website]](https://www.energidataservice.dk/)|It tracks the retail prices of motor fuel, electricity, and natural gas for Denmark.|
 |Global Petrol Prices |[[website]](https://www.globalpetrolprices.com/)|It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries.|
-|[pynvml](#pynvml) |[[website]](https://pypi.org/project/pynvml/)|Provides a Python interface to GPU management and monitoring functions.|
+|pynvml<a name='pynvml'></a> |[[website]](https://pypi.org/project/pynvml/)|Provides a Python interface to GPU management and monitoring functions.|
 
 #### Application scope of parameters sources
 | Title |  Carbon life cycle stage | Computer system stack | Hardware system | 
@@ -143,13 +147,13 @@ A list of some links that can be used as sources formodeling and calculating par
 |Carbon intensity|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |DTCO including Sustainability|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)|
 |Weebit ReRAM|[![1](image/Drive.svg) D&T ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)|
-|[RAPL](#RAPL)|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
+|RAPL <a name='RAPL'></a>|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |ENERGI DATA SERVICE|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |Global Petrol Prices|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
-|[pynvml](#pynvml)|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
+|pynvml<a name='pynvml'></a>|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 
 ## Papers
-### Papers overview
+#### Papers overview
 We have listed some relevant literature in the field of sustainable computer systems below.
 | ID | Venue  | Title | Affiliation | &nbsp;&nbsp;&nbsp;&nbsp;Link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 
 | :-: | :-: | :----: | :---------: | :---: |
@@ -214,7 +218,7 @@ We have listed some relevant literature in the field of sustainable computer sys
 59<a name='paper59'></a>|ICACT <br>2019|PUE or GPUE: A Carbon-Aware Metric for Data Centers|KAIST| [[paper]](https://ieeexplore.ieee.org/document/8701895)![Scholar citations](https://img.shields.io/badge/Citations-4-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 60<a name='paper60'></a>|Rice <br>2023|Data-Centric Green Artificial Intelligence: A Survey|| [[paper]](https://arxiv.org/abs/2303.10158)![Scholar citations](https://img.shields.io/badge/Citations-0-_.svg?logo=google-scholar&labelColor=4f4f4f&color=3388ee)|
 
-### Papers' application scope
+#### Papers application scope
 | Link | Target problem | Carbon life cycle stage | Hardware system | Computer system stack | Datacenter stack |   
 | :---: | :---- | :------ | :------ | :-------- |:-------- | 
 |[1](#paper1)|[![1](image/Review.svg) Review ](Classification/Target_Problem.md#Review)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)<br>[![1](image/End-of-life.svg) E-o-l ](Classification/Included_carbon_life_cycle_stage.md#End-of-life)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)|N/A|[![1](image/Infrastructure.svg) Infra ](Classification/Computer_system_stack.md#Infrastructure)|
