@@ -249,7 +249,7 @@
     {
         "Title": "Peeling Back the Carbon Curtain: Carbon Optimization Challenges in Cloud Computing",
         "Target Problem": "Modeling, Optimization",
-        "Computer system stack ": "Appliaction",
+        "Computer system stack ": "Application",
         "Datacenter stack": "Infrastructure, Appliaction",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "Manufacturing, Operation",
@@ -769,7 +769,7 @@
     {
         "Title": "Data-Centric Green Artificial Intelligence: A Survey",
         "Target Problem": "Review ",
-        "Computer system stack ": "Appliaction",
+        "Computer system stack ": "Application",
         "Datacenter stack": "Application,Platform, Infrastructure",
         "Hardware system": "Datacenter",
         "Included carbon life cycle stage": "End-of-life, Manufacturing, Operation",
