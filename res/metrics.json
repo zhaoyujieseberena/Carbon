@@ -8,7 +8,7 @@
         "Description": "**PUE**<br>Power Usage Effectiveness",
         "Link": "https://www.thegreengrid.org/en/resources/library-and-tools/20-pue%3A-a-comprehensive-examination-of-the-metric",
         "Papertitle": "PUE™: A Comprehensive Examination of the Metric.",
-        "Equation": "$\\frac{Power_{total}}{Power_{computing}}\\cdot100   $<br>unit: $\\%$",
+        "Equation": "$\\frac{Power_{total}}{Power_{computing}}\\cdot100   $<br>unit: %",
         "Details": "**PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center."
     },
     {

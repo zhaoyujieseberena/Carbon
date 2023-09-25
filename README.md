@@ -15,11 +15,11 @@ A list of carbon relevant paper links. If you have any comment, please create an
   - [Tools metrics usage](#Tools-metrics-usage)
   - [Estimation of operational carbon](#Estimation-of-operational-carbon)
   - [Estimation of embodied carbon](#Estimation-of-embodied-carbon)
-- [The parameters sources](#The parameters sources)
+- [The parameters sources](#The-parameters-sources)
   - [A summary of parameters sources](A-summary-of-parameters-sources)
 - [Papers](#Papers)
   - [Papers overview](Papers-overview)
-  - [Papers application scope](Papers application scope)
+  - [Papers application scope](Papers-application-scope)
 
 ## Legend
 
@@ -35,7 +35,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 ### Metrics overview
 | Metric | Equation | Details | 
  | :--------| :------ | :------ |
-**PUE**<br>Power Usage Effectiveness| $\frac{Power_{total}}{Power_{computing}}\cdot100   $<br>unit: $\%$| **PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center.|
+**PUE**<br>Power Usage Effectiveness| $\frac{Power_{total}}{Power_{computing}}\cdot100   $<br>unit: %| **PUE** is a raito that measures how much energy is directly used for computing rather than for cooling and other support systems in a data center.|
 **CUE**<br>Carbon Usage Effectiveness| $CI\cdot PUE$ <br>unit: $kg/kwh$<br>where $CI$ is $CO_2$ intensity| **CUE** is average produced carbon per computing energy in a data center. Computing energy is the energy directly used for computing rather than for cooling and other support systems It can more directly reflect the carbon efficiency of a data center than PUE. |
 **GPUE**<br>Green Power Usage Effectivenes | $G\cdot PUE$<br>unit: $kg/kwh$<br>where $G=$<br>$\Sigma_i CI_{souce\, i}\cdot Weight_{source\, i}$| **GPUE** describes the same metrics as CUE. What’s more, it considers that carbon intensity is composed of energy from different sources with a certain weight.|
 **CCI**<br>Computational Carbon Intensity| $\frac{CO_{2\,device}}{OPs_{device}}   $<br>unit: $kg$| **CCI** describes the average carbon footprint per operation for a computing device. It characterizes the device's consumption based on workload rather than using time.|
