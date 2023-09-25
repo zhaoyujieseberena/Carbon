@@ -6,11 +6,14 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 - [Legend](#Legend)
 - [Metrics](#Metrics)
+  - [Metrics overview](Metrics-overview)
+
+  - [Metrics application usage](Metrics-application-usage)
 
 - [Tools](#Tools)
-  - [Metric configuration](#Metric configuration)
-  - [Operational carbon modeling method](#Operational carbon modeling method)
-  - [Embodied carbon modeling method](#Embodied carbon modeling method)
+  - [A summary of tools used in modeling and optimization](A-summary-of-tools-used-in-modeling-and-optimization)
+  - [Tools metrics usage](#Tools-metrics-usage)
+  - [Embodied carbon modeling method](#Embodied-carbon modeling-method)
 - [The parameters sources](#The parameters sources)
 - [Papers](#Papers)
 
@@ -51,6 +54,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |CDP/CEP |[[Paper]](https://ieeexplore.ieee.org/document/10122998)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)|
 |tCDP/tCEP |[[Paper]](https://arxiv.org/abs/2305.01831)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)|
 ## Tools
+#### A summary of tools used in modeling and optimization
 | ID | Name | Link   | Description | 
 | :-: | :-: |  :----: | :--------- |
 |1<a name='Link1'></a>|Codecarbon |[[code]](https://github.com/mlco2/codecarbon)|Track emissions from Compute and recommend ways to reduce their impact on the environment.|
@@ -64,6 +68,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |9<a name='Link9'></a>|ACT |[[code]](https://github.com/facebookresearch/ACT) [[paper]](https://ieeexplore.ieee.org/document/10122998)|An analytical, architectural carbon model to estimate operational and embodied carbon.|
 |10<a name='Link10'></a>|Greenchip |[[code]](https://github.com/Pitt-JonesLab/Greenchip) [[paper]](http://www.sciencedirect.com/science/article/pii/S2210537917300823)|A tool designed to compare energy and emission costs between computer chips|
 
+#### Tools application usage
 | ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | 
 | :---: | :--- | :---- | :------ | :----- | :-------- | 
 |[1](#Link1)|Codecarbon|[![1](image/Modeling.svg) Mod. ](Classification/Target_Problem.md#Modeling)|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
@@ -77,7 +82,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |[9](#Link9)|ACT|[![1](image/Optimization.svg) Opt ](Classification/Target_Problem.md#Optimization)<br>[![1](image/Modeling.svg) Mod. ](Classification/Target_Problem.md#Modeling)|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)<br>[![1](image/Drive.svg) D&T ](Classification/Hardware_system.md#Tiny)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |[10](#Link10)|Greenchip|[![1](image/Optimization.svg) Opt ](Classification/Target_Problem.md#Optimization)<br>[![1](image/Modeling.svg) Mod. ](Classification/Target_Problem.md#Modeling)|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)<br>[![1](image/End-of-life.svg) E-o-l ](Classification/Included_carbon_life_cycle_stage.md#End-of-life)|
 
-#### a summary of metrics can be calculated by tools 
+#### Tools metrics usage
 |ID| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| 
 |:-:| :- | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |[1](#Link1)|Codecarbon|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/yes.svg)|![1](image/yes.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|
@@ -91,13 +96,13 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |[9](#Link9)|ACT|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/yes.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/yes.svg)|![1](image/yes.svg)|
 |[10](#Link10)|Greenchip|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/yes.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/no.svg)|![1](image/yes.svg)|![1](image/yes.svg)|
 
-### Operational carbon modeling method
+#### Estimation of operational carbon
 | Tools| Operational energy | Operational usage | Operational carbon intensity |  
 | :-: | :- |  :- | :- | 
-|Codecarbon| CPU: RAPL file<br> GPU:Uses pynvml library|CPU:50%<br> GPU:N/A| Choose location of operation|
-|Carbontracker| CPU: RAPL file<br> GPU: Uses pynvml library|CPU:RAPL files<br> GPU:N/A| Using external APIs or choose location of operation.|
-|Eco2AI| CPU: $TDP_{cpu}$<br> GPU: Uses pynvml library|CPU:uses os<br> GPU:N/A| Choose location of operation|
-|EIT| CPU: RAPL file<br> GPU: Uses pynvml library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
+|Codecarbon| CPU: [RAPL](RAPL) file<br> GPU:Uses [pynvml](pynvml) library|CPU:50%<br> GPU:N/A| Choose location of operation|
+|Carbontracker| CPU: [RAPL](RAPL) file<br> GPU: Uses [pynvml](pynvml) library|CPU:[RAPL](RAPL) files<br> GPU:N/A| Using external APIs or choose location of operation.|
+|Eco2AI| CPU: $TDP_{cpu}$<br> GPU: Uses [pynvml](pynvml) library|CPU:uses os<br> GPU:N/A| Choose location of operation|
+|EIT| CPU: [RAPL](RAPL) file<br> GPU: Uses [pynvml](pynvml) library|CPU:uses psutil python module<br> GPU:Uses Popen to open a thread| Using external APIs or choose location of operation.|
 |GreenAlgorithms| CPU: $TDP_{core}\cdot core number$ <br> GPU: $TDP_{per GPU}$|CPU:100%<br> GPU:100%| Choose location or source of operation|
 |Cumulator| CPU:N/A<br> GPU: $TDP_{per GPU}$ |CPU:N/A<br> GPU:N/A| Choose location or time of operation|
 |TinyML| CPU:plugin EPA<br> GPU:N/A|CPU:100%<br> GPU:N/A| Choose location or source of operation|
@@ -105,7 +110,7 @@ A list of carbon relevant paper links. If you have any comment, please create an
 |ACT| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
 |Greenchip| CPU:plugin McPAT<br> GPU:plugin McPAT|CPU:plugin McPAT<br> GPU:plugin McPAT| Choose location or source of operation|
 
-### Embodied carbon modeling method
+### Estimation of embodied carbon
 | Tools | Embodied energy | Embodied carbon intensity | 
 | :-: | :- | :- |
 |TinyML| Plugin LCA| Choose location of manufacturing.|
@@ -124,9 +129,10 @@ A list of some links that can be used as sources formodeling and calculating par
 |Carbon intensity |[[website]](https://www.eea.europa.eu/en/datahub/datahubitem-view/de803073-7dff-4c75-af40-166ba6c16e95)|A dataset collection published in 2022 describes the carbon intensity of electricity generation for different countries.|
 |DTCO including Sustainability |[[paper]](https://ieeexplore.ieee.org/document/9372004)|This article describes the energy consumption per unit area of several processes at different technology nodes in the logic IC manufacturing process.|
 |Weebit ReRAM |[[web page]](https://www.weebit-nano.com/weebit-nano-rram-reram-ip-nvm-for-semiconductors-green-materials-eco-friendly-technology-production/)|This page describes the amount of carbon dioxide emissions that ReRAM reduces during its life cycle compared to regular MRAM.|
-|RAPL |[[website]](https://github.com/hubblo-org/windows-rapl-driver)|RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system.|
+|[RAPL](#RAPL) |[[website]](https://github.com/hubblo-org/windows-rapl-driver)|RAPL allows software to monitor and control the power usage of the processor and its components, such as the CPU cores, memory controllers and GPUs. The Linux powercap driver has the ability to expose the RAPL hardware energy counters by a set of files that can be accessed through the Linux file system.|
 |ENERGI DATA SERVICE |[[website]](https://www.energidataservice.dk/)|It tracks the retail prices of motor fuel, electricity, and natural gas for Denmark.|
 |Global Petrol Prices |[[website]](https://www.globalpetrolprices.com/)|It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries.|
+|[pynvml](#pynvml) |[[website]](https://pypi.org/project/pynvml/)|Provides a Python interface to GPU management and monitoring functions.|
 
 #### Application scope of parameters sources
 | Title |  Carbon life cycle stage | Computer system stack | Hardware system | 
@@ -137,9 +143,10 @@ A list of some links that can be used as sources formodeling and calculating par
 |Carbon intensity|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |DTCO including Sustainability|[![1](image/Micro.svg) Micro. ](Classification/Computer_system_stack.md#Microarchitecture)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)|
 |Weebit ReRAM|[![1](image/Drive.svg) D&T ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)|
-|RAPL|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
+|[RAPL](#RAPL)|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |ENERGI DATA SERVICE|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 |Global Petrol Prices|[![1](image/App.svg) App ](Classification/Computer_system_stack.md#Application)<br>[![1](image/Circuit.svg) Circuit ](Classification/Hardware_system.md#Tiny)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)<br>[![1](image/Tiny.svg) Tiny ](Classification/Hardware_system.md#Tiny)|[![1](image/Manufacturing.svg) MF ](Classification/Included_carbon_life_cycle_stage.md#Manufacturing)<br>[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
+|[pynvml](#pynvml)|[![1](image/OS.svg) OS ](Classification/Computer_system_stack.md#OS)|[![1](image/center.svg) DC ](Classification/Hardware_system.md#Datacenter)<br>[![1](image/Edge.svg) Edge ](Classification/Hardware_system.md#Edge.md)<br>[![1](image/Mobile.svg) Mobile ](Classification/Hardware_system.md#Mobile)|[![1](image/Operation.svg) Op ](Classification/Included_carbon_life_cycle_stage.md#Operation)|
 
 ## Papers
 ### Papers overview

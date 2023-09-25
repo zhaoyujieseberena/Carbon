@@ -6,10 +6,13 @@ A list of carbon relevant paper links. If you have any comment, please create an
 
 - [Legend](#Legend)
 - [Metrics](#Metrics)
+  - [Metrics overview](Metrics-overview)
+
+  - [Metrics application usage](Metrics-application-usage)
 
 - [Tools](#Tools)
-  - [Metric configuration](#Metric configuration)
-  - [Operational carbon modeling method](#Operational carbon modeling method)
-  - [Embodied carbon modeling method](#Embodied carbon modeling method)
+  - [A summary of tools used in modeling and optimization](A-summary-of-tools-used-in-modeling-and-optimization)
+  - [Tools metrics usage](#Tools-metrics-usage)
+  - [Embodied carbon modeling method](#Embodied-carbon modeling-method)
 - [The parameters sources](#The parameters sources)
 - [Papers](#Papers)

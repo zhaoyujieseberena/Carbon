@@ -60,7 +60,7 @@
         "Descriptions": "This page describes the amount of carbon dioxide emissions that ReRAM reduces during its life cycle compared to regular MRAM."
     },
     {
-        "Description": "RAPL",
+        "Description": "[RAPL](#RAPL)",
         "status": "website",
         "Included carbon life cycle stage": "Operation",
         "Hardware system": "Datacenter, Edge",
@@ -88,5 +88,15 @@
         "Datacenter stack": "Infrastructure",
         "Link": "https://www.globalpetrolprices.com/",
         "Descriptions": "It tracks the retail prices of motor fuel, electricity, and natural gas in over 150 countries."
+    },
+    {
+        "Description": "[pynvml](#pynvml)",
+        "status": "website",
+        "Included carbon life cycle stage": "Operation",
+        "Hardware system": "Datacenter, Mobile, Edge",
+        "Computer system stack ": "OS",
+        "Datacenter stack": "Platform",
+        "Link": "https://pypi.org/project/pynvml/",
+        "Descriptions": "Provides a Python interface to GPU management and monitoring functions."
     }
 ]

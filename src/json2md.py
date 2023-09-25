@@ -113,7 +113,7 @@ def load_Link(file):
     
     with open(path, 'r') as f:
             table = json.load(f)
-            
+            file.write("#### A summary of tools used in modeling and optimization\n")
 
             file.write("| ID | Name | Link   | Description | \n")
             file.write("| :-: | :-: |  :----: | :--------- |\n")
@@ -133,7 +133,7 @@ def load_Link(file):
 
             file.write("\n")
 
-            
+            file.write("#### Tools application usage\n")
             file.write("| ID | Name  | Target problem | Computer system stack | Hardware system | Carbon life cycle stage | \n")
             file.write("| :---: | :--- | :---- | :------ | :----- | :-------- | \n")
             j=0
@@ -152,7 +152,8 @@ def load_Link(file):
             file.write("\n")
 
 
-            file.write("#### a summary of metrics can be calculated by tools \n")
+            
+            file.write("#### Tools metrics usage\n")
             file.write("|ID| Tools| PUE | CUE | GPUE | CCI | SCI | ASC | JSC | CDP/<br>CEP | tCDP/<br>tCEP| \n")
             file.write("|:-:| :- | :-: |  :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n")
             
@@ -180,7 +181,7 @@ def load_Link(file):
 
             file.write("\n")
 
-            file.write("### Operational carbon modeling method\n")
+            file.write("#### Estimation of operational carbon\n")
             file.write("| Tools| Operational energy | Operational usage | Operational carbon intensity |  \n")
             file.write("| :-: | :- |  :- | :- | \n")
             
@@ -201,7 +202,7 @@ def load_Link(file):
 
             file.write("\n")
 
-            file.write("### Embodied carbon modeling method\n")
+            file.write("### Estimation of embodied carbon\n")
             file.write("| Tools | Embodied energy | Embodied carbon intensity | \n")
             file.write("| :-: | :- | :- |\n")
             
