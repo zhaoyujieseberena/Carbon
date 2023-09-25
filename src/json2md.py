@@ -221,6 +221,7 @@ def load_Link(file):
                         
                         file.write("| {}.".format(paper['Embodied carbon']))
                         if 'N/A' not in paper['Embodied carbon intensity']: file.write("| {}.".format(paper['Embodied carbon intensity']))
+                        else: file.write("| {}".format(paper['Embodied carbon intensity']))
 
                     
                         

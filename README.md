@@ -118,7 +118,7 @@ A summary of sustainability computing. If you have any comments, please create a
 | Tools | Embodied energy | Embodied carbon intensity | 
 | :-: | :- | :- |
 |TinyML| Plugin LCA.| Choose the location or source of manufacturing.|
-|Greenchip| Plugin LCA.|
+|Greenchip| Plugin LCA.| N/A|
 |3D-Carbon| Calculate based on hardware parameters.| Choose the location or source of manufacturing.|
 |ACT| Calculate based on hardware parameters.| Choose the location or source of manufacturing.|
 
